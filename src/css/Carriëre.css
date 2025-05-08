@@ -5,6 +5,12 @@
 }
 
 body{
+    transform: scale(0.75);
+    transform-origin: top left;
+    width: 133.33%; 
+    overflow-x: auto;
+
+
     background-color: white;
     font-family: 'Roboto', sans-serif;
     display: grid;
