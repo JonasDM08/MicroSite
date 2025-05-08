@@ -36,6 +36,7 @@ div img{
 }
 
 #menu {
+  z-index: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: transparent;
