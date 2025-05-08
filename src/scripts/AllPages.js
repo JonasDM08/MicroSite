@@ -1,3 +1,4 @@
+//menu code
 window.addEventListener('scroll', function() {
     var menu = document.getElementById('menu');
     var NavContent = document.getElementById('navigation')
