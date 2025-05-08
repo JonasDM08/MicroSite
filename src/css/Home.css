@@ -74,7 +74,7 @@ a:hover {
   .hero {
     
     position: relative;
-    background-image: url(/Opdrachten_2025/MicroWebsite/afbeeldingen/d481f3c72e283309071f79e01b05c06d.gif);
+    background-image: url(/src/afbeeldingen/d481f3c72e283309071f79e01b05c06d.gif);
     background-size: cover;  
     background-position: center; 
     background-repeat: no-repeat; 
@@ -171,7 +171,7 @@ a:hover {
     background: #f4f4f4;
     padding: 20px;
     border-radius: 5px;
-    background-image: url(/Opdrachten_2025/MicroWebsite/afbeeldingen/programmeren.beter.jpg); 
+    background-image: url(/src/afbeeldingen/programmeren.beter.jpg); 
     background-size: cover;  
     background-position: center; 
     background-repeat: no-repeat; /* Voorkomt herhaling van de afbeelding */
@@ -257,7 +257,7 @@ a:hover {
     background: #f4f4f4;
     padding: 20px;
     border-radius: 5px;
-    background-image: url(/Opdrachten_2025/MicroWebsite/afbeeldingen/foto2.png); 
+    background-image: url(/src/afbeeldingen/foto2.png); 
     background-size: cover;  
     background-position: center; 
     background-repeat: no-repeat; /* Voorkomt herhaling van de afbeelding */
