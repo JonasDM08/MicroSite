@@ -1,0 +1,133 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: -50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+aside, .rechts {
+    float: left;
+    margin-left: 5px;
+    margin-top: 90px;
+    margin-right: 5px;
+    margin-bottom: 70px;
+    max-width: 49%;
+    max-height: 520px;
+    min-height: 49%;
+    border-bottom: 1px solid #e0e0e0;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+aside p, aside h2 {
+    margin-left: 5px;
+}
+
+aside img {
+    margin-top: -1.3rem;
+    margin-bottom: 0;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+h3, h4 {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+ul {
+    list-style-type: disc;
+    margin: 10px 0 20px 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #000000d1;
+    color: white;
+}
+
+img {
+    float: right;
+    margin-top: 3rem;
+    border-radius: 8px 0px 8px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.rechts {
+    float: right;
+    max-height: 450px;
+}
+
+.gif {
+    background-image: url(/src/afbeeldingen/d481f3c72e283309071f79e01b05c06d.gif);
+    background-size: cover;
+    color: white;
+    font-weight: 1000;
+}
+
+.gif td {
+    background-color: #00000078;
+}
+
+.onder{
+    padding-top: 550px;
+}

@@ -5,65 +5,65 @@
     box-sizing: border-box;
   }
   
-  html {
-    scroll-behavior: smooth;
-  }
+html {
+  scroll-behavior: smooth;
+}
 
 
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-  }
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
   
-  a {
-    text-decoration: none;
-    color: white; 
-    margin: 5px;
-    font-size: 1.5rem;
+a {
+  text-decoration: none;
+  color: white; 
+  margin: 5px;
+  font-size: 1.5rem;
 }
 
 nav{
-    display: flex;
-    justify-content: end;
-    align-items: center;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 
 
 div img{
-    margin-right: auto;
+  margin-right: auto;
 }
 
 #menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: transparent;
-    transition: background-color 0.5s ease-in;
-    text-align: right;
-    position: fixed;
-    width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: transparent;
+  transition: background-color 0.5s ease-in;
+  text-align: right;
+  position: fixed;
+  width: 100%;
 }
 
 #menu.scrolled{
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 #menu:hover {
-    background-color: white; 
-    color: white;
+  background-color: white; 
+  color: white;
 }
 
 #menu:hover a {
-    color: black;
-    transition: color 0.35s ease-in;
+  color: black;
+  transition: color 0.35s ease-in;
 
 }
 
 
 a:hover {
-    color: orangered !important;
+  color: orangered !important;
 }
 
 
@@ -74,7 +74,7 @@ a:hover {
   .hero {
     
     position: relative;
-    background-image: url(/src/Afbeeldingen/d481f3c72e283309071f79e01b05c06d.gif);
+    background-image: url(/src/afbeeldingen/d481f3c72e283309071f79e01b05c06d.gif);
     background-size: cover;  
     background-position: center; 
     background-repeat: no-repeat; 
@@ -171,7 +171,7 @@ a:hover {
     background: #f4f4f4;
     padding: 20px;
     border-radius: 5px;
-    background-image: url(/Opdrachten_2025/MicroWebsite/afbeeldingen/programmeren.beter.jpg); 
+    background-image: url(/src/afbeeldingen/programmeren.beter.jpg); 
     background-size: cover;  
     background-position: center; 
     background-repeat: no-repeat; /* Voorkomt herhaling van de afbeelding */
@@ -257,7 +257,7 @@ a:hover {
     background: #f4f4f4;
     padding: 20px;
     border-radius: 5px;
-    background-image: url(/Opdrachten_2025/MicroWebsite/afbeeldingen/foto2.png); 
+    background-image: url(/src/afbeeldingen/foto2.png); 
     background-size: cover;  
     background-position: center; 
     background-repeat: no-repeat; /* Voorkomt herhaling van de afbeelding */

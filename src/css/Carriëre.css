@@ -1,0 +1,595 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    transform: scale(0.75);
+    transform-origin: top left;
+    width: 133.33%; 
+    overflow-x: auto;
+
+
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "hd hd hd"
+    "mn mn mn"
+    "gd gd gd"
+    "ft ft ft";
+}
+
+.achtergrondverder{
+    background-color: #f5f5f5;
+}
+
+.achtergrondarbeid{
+    background-color: black;
+}
+
+.achtergrondarbeid h2{
+    color: white;
+}
+
+header{
+    padding: 10px 0;
+}
+
+h1{
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.intro p{
+    text-align: center;
+    padding: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.containerhead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container{
+    grid-area: mn;
+}
+
+.container a{
+    text-decoration: none;
+    color: black;
+}
+
+.verder h2{
+    text-align: center;
+}
+
+.nav{
+    grid-area: nv;
+    color: white;
+    display: flex;
+    gap: 0.5em;
+    padding-right: 10%;
+    align-items: center;
+}
+
+
+.header{
+    grid-area: hd;
+}
+
+.logo{
+    margin-left: 10%; 
+    height: 50px;
+}
+
+.verder img{
+    padding-left: 10%;
+    border-radius: 10px;
+}
+
+.banner{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.verderafbeeldingen{
+    display: flex;
+    
+}
+
+.arbeidsmarkt{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    grid-template-areas: 
+    "ee tw de"
+    "vi ij es";
+    gap: 2em;
+}
+
+.arbeidsmarkt .layout{
+    border: white 2px solid;
+}
+
+.verderstuderen .layout{
+    border: #000 2px solid;
+}
+
+.arbeidsmarkt .button-89{
+    color: white;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layout{
+    height: 230px;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 5%;
+    padding-top: 15px;
+    border-radius: 10px;
+}
+
+.layout p{
+    font-size: medium;
+    font-stretch: condensed;
+}
+
+.eerste{
+    margin-left: 10px;
+    grid-area: ee;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "eeco eeaf"
+}
+
+.eerste-content{
+    
+    grid-area: eeco;
+}
+
+.eerste-afbeelding{
+    
+    grid-area: eeaf;
+}
+
+.tweede{
+    grid-area: tw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "twco twaf"
+}
+
+.tweede-content{
+    
+    grid-area: twco;
+}
+
+.tweede-afbeelding{
+    
+    grid-area: twaf;
+}
+
+
+.derde{
+    margin-right: 10px;
+    grid-area: de;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "deco deaf"
+}
+
+.derde-content{
+    
+    grid-area: deco;
+}
+
+.derde-afbeelding{
+    
+    grid-area: deaf;
+}
+
+.vierde{
+    grid-area: vi;
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "vico viaf"
+}
+
+.vierde-content{
+    
+    grid-area: vico;
+}
+
+.vierde-afbeelding{
+    
+    grid-area: viaf;
+}
+
+.vijfde{
+    grid-area: ij;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "ijco ijaf"
+}
+
+.vijfde-content{
+    
+    grid-area: ijco;
+}
+
+.vijfde-afbeelding{
+    
+    grid-area: ijaf;
+}
+
+.zesde{
+    grid-area: es;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "zeco zeaf"
+}
+
+.zesde-content{
+    
+    grid-area: zeco;
+}
+
+.zesde-afbeelding{
+    
+    grid-area: zeaf;
+}
+.verderstuderen{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    grid-template-areas: 
+    "cy ai we"
+    "so ne ap";
+    gap: 2em;
+}
+
+.cyber{
+    margin-left: 10px;
+    grid-area: cy;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "cbco cbaf"
+}
+
+.cyber-content{
+    
+    grid-area: cbco;
+}
+
+.cyber-afbeelding{
+    
+    grid-area: cbaf;
+}
+
+.ai{
+    grid-area: ai;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "aico aiaf"
+}
+
+.ai-content{
+    
+    grid-area: aico;
+}
+
+.ai-afbeelding{
+    
+    grid-area: aiaf;
+}
+
+.web{
+    grid-area: we;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "weco weaf"
+}
+
+.web-content{
+    
+    grid-area: weco;
+}
+
+.web-afbeelding{
+    
+    grid-area: weaf;
+}
+
+.software{
+    grid-area: so;
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "soco soaf"
+}
+
+.software-content{
+    
+    grid-area: soco;
+}
+
+.software-afbeelding{
+    
+    grid-area: soaf;
+}
+
+.network{
+    grid-area: ne;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "neco neaf"
+}
+
+.network-content{
+    
+    grid-area: neco;
+}
+
+.network-afbeelding{
+    
+    grid-area: neaf;
+}
+
+.app{
+    grid-area: ap;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "apco apaf"
+}
+
+.app-content{
+    
+    grid-area: apco;
+}
+
+.app-afbeelding{
+    
+    grid-area: apaf;
+}
+
+
+
+.nav a{
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav a::after{
+content: ""; 
+position: absolute;
+left: 50%;
+bottom: 0;
+width: 0;
+height: 2px;
+background-color: rgb(251, 143, 161);
+transition: width 0.3s ease-in-out , left 0.3s ease-in-out;
+}
+
+.nav a:hover::after{
+width: 100%;
+left: 0;
+}
+
+.nav a:hover{
+    color: rgb(251, 143, 161);
+    transition-duration: 0.5s;
+}
+
+.abonneren{
+    background-color: #000;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 7em;
+    border-radius: 0.65rem;
+    cursor: pointer;
+    color: white;
+}
+
+   
+.abonneren:active {
+    color: black;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2);
+}
+   
+.abonneren:hover:not(:disabled) {
+    background: white;
+    color: black;
+    border: 2px solid black;
+    transition-duration: 0.5s;
+}
+   
+.abonneren:disabled {
+    cursor: auto;
+    color: grey;
+}
+
+footer{
+    grid-area: ft;
+}
+
+.footer {
+    background-color: white;
+    color: black;
+    padding: 40px 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.footer-logo {
+    width: 85%;
+    height: 90%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+.footer-section h4 {
+    font-weight: bold;
+}
+.footer-contact {
+    list-style: none;
+    padding: 0;
+}
+.footer-contact li {
+    margin: 5px 0;
+}
+.footer-contact a {
+    color: black;
+    text-decoration: none;
+}
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+.subscribe-form input {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid black;
+}
+.subscribe-form button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+.subscribe-form button:hover {
+    background-color: grey;
+}
+.social-icons a {
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+/**/
+.verderstuderen .button-89 {
+    --b: 3px;   /* border thickness */
+    --s: .45em; /* size of the corner */
+    --color: #000;
+    
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+        conic-gradient(from 90deg at var(--b) var(--b),#000 90deg,var(--color) 0)
+        var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 16px;
+
+    border: 0;
+    border-radius: 10px;
+
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    }
+
+    .button-89:hover,
+    .button-89:focus-visible{
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+    }
+
+    .button-89:active {
+    background: var(--color);
+    color: #000;
+    }
+.verderstuderen .button-89 a{
+    color: white;
+    text-decoration: none;
+}
+
+    /**/
+.arbeidsmarkt .button-89 {
+    --b: 3px;   /* border thickness */
+    --s: .45em; /* size of the corner */
+    --color: #fff;
+    
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+        conic-gradient(from 90deg at var(--b) var(--b),#fff 90deg,var(--color) 0)
+        var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 16px;
+
+    border: 0;
+    border-radius: 10px;
+
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    }
+
+    .button-89:hover,
+    .button-89:focus-visible{
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+    }
+
+    .button-89:active {
+    background: var(--color);
+    color: #000;
+    }
+
+.arbeidsmarkt .button-89 a{
+    color: black;
+    text-decoration: none;
+}
