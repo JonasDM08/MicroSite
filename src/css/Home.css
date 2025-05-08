@@ -5,65 +5,65 @@
     box-sizing: border-box;
   }
   
-  html {
-    scroll-behavior: smooth;
-  }
+html {
+  scroll-behavior: smooth;
+}
 
 
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-  }
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
   
-  a {
-    text-decoration: none;
-    color: white; 
-    margin: 5px;
-    font-size: 1.5rem;
+a {
+  text-decoration: none;
+  color: white; 
+  margin: 5px;
+  font-size: 1.5rem;
 }
 
 nav{
-    display: flex;
-    justify-content: end;
-    align-items: center;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 
 
 div img{
-    margin-right: auto;
+  margin-right: auto;
 }
 
 #menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: transparent;
-    transition: background-color 0.5s ease-in;
-    text-align: right;
-    position: fixed;
-    width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: transparent;
+  transition: background-color 0.5s ease-in;
+  text-align: right;
+  position: fixed;
+  width: 100%;
 }
 
 #menu.scrolled{
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 #menu:hover {
-    background-color: white; 
-    color: white;
+  background-color: white; 
+  color: white;
 }
 
 #menu:hover a {
-    color: black;
-    transition: color 0.35s ease-in;
+  color: black;
+  transition: color 0.35s ease-in;
 
 }
 
 
 a:hover {
-    color: orangered !important;
+  color: orangered !important;
 }
 
 
