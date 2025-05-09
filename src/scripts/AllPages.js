@@ -1,7 +1,7 @@
 //menu code
 window.addEventListener('scroll', function() {
-    var menu = document.getElementById('menu');
-    var NavContent = document.getElementById('navigation')
+    var menu = document.querySelector('.menu');
+    var NavContent = document.querySelector('.navigation')
     var links = NavContent.getElementsByTagName('a')
 
     if (window.scrollY > 50) {
