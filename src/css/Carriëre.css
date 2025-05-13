@@ -38,6 +38,58 @@ header{
     padding: 10px 0;
 }
 
+a {
+  text-decoration: none;
+  color: white; 
+  margin: 5px;
+  font-size: 1.5rem;
+}
+
+nav{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+
+
+div img{
+  margin-right: auto;
+}
+
+.menu {
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: transparent;
+  transition: background-color 0.5s ease-in;
+  text-align: right;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.menu.scrolled{
+  background-color: white;
+  color: black;
+}
+
+.menu:hover {
+  background-color: white; 
+  color: white;
+}
+
+.menu:hover a {
+  color: black;
+  transition: color 0.35s ease-in;
+
+}
+
+
+a:hover {
+  color: orangered !important;
+}
+
 h1{
     padding: 20px;
     text-align: center;

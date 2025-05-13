@@ -35,28 +35,29 @@ div img{
   margin-right: auto;
 }
 
-#menu {
+.menu {
   z-index: 1;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   background-color: transparent;
   transition: background-color 0.5s ease-in;
   text-align: right;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
-#menu.scrolled{
+.menu.scrolled{
   background-color: white;
   color: black;
 }
 
-#menu:hover {
+.menu:hover {
   background-color: white; 
   color: white;
 }
 
-#menu:hover a {
+.menu:hover a {
   color: black;
   transition: color 0.35s ease-in;
 
