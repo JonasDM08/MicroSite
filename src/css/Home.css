@@ -19,7 +19,7 @@ body {
 a {
   text-decoration: none;
   color: white; 
-  margin: 5px;
+  margin: 10px;
   font-size: 1.5rem;
 }
 
@@ -44,6 +44,7 @@ div img{
   text-align: right;
   position: fixed;
   width: 100%;
+  height: 75px;
   z-index: 1;
 }
 
