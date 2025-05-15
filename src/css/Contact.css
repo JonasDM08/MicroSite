@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+html {
+  scroll-behavior: smooth;
+}
+main {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.fade {
+  position: absolute;
+  bottom: 0;           /* in plaats van top */
+  left: 0;
+  width: 100%;
+  height: 30%;         /* hoger voor vloeiender overgang */
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, black 100%);
+}
+.menu {
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: transparent;
+  transition: background-color 0.5s ease-in;
+  text-align: right;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.menu.scrolled{
+  background-color: white;
+  color: black;
+}
+
+.menu:hover {
+  background-color: white; 
+  color: white;
+}
+
+.menu:hover a {
+  color: black;
+  transition: color 0.35s ease-in;
+
+}
