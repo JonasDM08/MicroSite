@@ -58,13 +58,6 @@ footer{
     width: 200px;
     border: 1px solid black;
 }
-.subscribe-form button {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    cursor: pointer;
-}
 .subscribe-form button:hover {
     background-color: grey;
 }
