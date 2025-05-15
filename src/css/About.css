@@ -134,7 +134,7 @@ a {
 a {
     text-decoration: none;
     color: white; 
-    margin: 5px;
+    margin: 10px;
     font-size: 1.5rem;
   }
   
@@ -157,8 +157,9 @@ a {
     background-color: transparent;
     transition: background-color 0.5s ease-in;
     text-align: right;
-    position: fixed;
+    position: relative;
     width: 100%;
+    height: 75px;
     z-index: 1;
   }
   
