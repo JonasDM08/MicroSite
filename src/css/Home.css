@@ -64,12 +64,6 @@ div img{
 
 }
 
-
-a:hover {
-  color: orangered !important;
-}
-
-
   
   /* INFORMATIE: Hero Sectie stijlen */
   .hero {
@@ -86,9 +80,8 @@ a:hover {
     color: white;
     
   }
-
  
-  /* INFORMATIE: Container voor secties */
+  /* ||INFORMATIE: Container voor secties|| */
   
 
   .container-GTI{
@@ -106,7 +99,7 @@ a:hover {
     display: flex;
   }
 
-  .lees-meer-btn {
+  .lees-meer-btn-GTI {
     display: inline-flex;           
     align-items: center;            
     text-decoration: none;           
@@ -114,35 +107,35 @@ a:hover {
     border: 1px solid #fcfcfc;
     padding: 8px 12px;
     font-family: Arial, sans-serif;  
-    /*transition: background 0.2s ease;*/
+    transition: border-radius 1s, transform 3s;
   }
     
-  /* Tekstgedeelte links */
-  .lees-meer-btn .btn-text {
+  .lees-meer-btn-GTI .btn-text {
     margin-right: 8px; 
   }
   
-  /* Pijl rechts, met verticale scheidingslijn links ervan */
-  .lees-meer-btn .btn-arrow {
+
+  .lees-meer-btn-GTI .btn-arrow {
     padding-left: 8px;
     border-left: 1px solid #000; 
   }
   
-  /* Hover-effect (optioneel) */
-  .lees-meer-btn:hover {
+  .lees-meer-btn-GTI:hover {
     background: #000;  
     color: #fff;      
-    border-color: #000;
+    border-radius: 50%;
   }
-  .lees-meer-btn:hover .btn-arrow {
+  .lees-meer-btn-GTI:hover .btn-arrow {
     border-left-color: #fff; 
+    transform: scale(110%);
   }
 
   
-  /* INFORMATIE: Diensten sectie stijlen */
+  /* INFORMATIE: Over Ons sectie stijlen */
 
   .container {
     width: 100%;
+    height: 700px;
     padding-right: 60px;
     padding-left: 60px ;
   }
@@ -175,7 +168,7 @@ a:hover {
     background-image: url(/src/afbeeldingen/programmeren.beter.jpg); 
     background-size: cover;  
     background-position: center; 
-    background-repeat: no-repeat; /* Voorkomt herhaling van de afbeelding */
+    background-repeat: no-repeat; 
   }
 
   
@@ -220,14 +213,16 @@ a:hover {
   }
 
 
-  /* INFORMATIE: Portfolio sectie stijlen */
+  /* ||INFORMATIE: carriére sectie stijlen|| */
  .carrière {
     width: 100%;
+    height: 700px;
     padding-right: 60px;
     padding-left: 60px ;
     padding-bottom: 60px;
     background-color: #000;
     color: white;
+    
  }
 
   #carrière h2 {
@@ -248,8 +243,8 @@ a:hover {
     height: 200px;
     border-radius: 5px;
     padding: 20px;
-    
-}
+  }
+
 
   .carrière-item2 {
     height: 300px;
@@ -261,7 +256,7 @@ a:hover {
     background-image: url(/src/afbeeldingen/foto2.png); 
     background-size: cover;  
     background-position: center; 
-    background-repeat: no-repeat; /* Voorkomt herhaling van de afbeelding */
+    background-repeat: no-repeat; 
   }
 
   .TekstCarrière {
@@ -273,12 +268,8 @@ a:hover {
      
   /* INFORMATIE: Footer sectie stijlen */
   footer {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+ 
   }
-
 
 
 .image-container {
@@ -293,11 +284,12 @@ a:hover {
     display: block;
     
 }
+
 .fade {
   position: absolute;
-  bottom: 0;           /* in plaats van top */
+  bottom: 0;          
   left: 0;
   width: 100%;
-  height: 30%;         /* hoger voor vloeiender overgang */
+  height: 30%;         
   background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, black 100%);
 }
