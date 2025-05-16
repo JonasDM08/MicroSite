@@ -23,11 +23,12 @@
     <main>
         <div class="container">
             <form action="https://httpbin.org/post" method="POST">
-
-                <label>Voornaam*</label><br>
-                <input name="voornaam" type="text" required autocomplete="on"><br>
+                <div class="form__group field">
+                    <input type="input" class="form_field" placeholder="Naam" name="naam" id='naam' required />
+                    <label for="naam" class="form_label">Naam</label>
+                </div>
                 <label>Achternaam*</label><br>
-                <input name="achternaam" type="text" required autocomplete="on"><br>
+                <input name="achternaam" type="text" required autocomplete="on" placeholder="Achternaam"><br>
                 <label>E-mail*</label><br>
                 <input name="e-mail" type="email" required autocomplete="on"><br>
                 <label>Telefoon</label><br>

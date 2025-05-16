@@ -13,7 +13,6 @@ body a{
 }
 button{
     min-width: 70%;
-    min-height: 10%;
 }
 button:hover{
     background-color: #212121;
@@ -76,11 +75,25 @@ footer{
 .footer-section h4 {
     font-weight: bold;
 }
-.form inputbox{
+.form input{
     margin-bottom: 20px;
+}
+.form_label{
+    display: block;
+  transition: all 0.3s;
+  transform: translateY(0rem);
+}
+.form_input:placeholder-shown + .form_label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+  transform: translateY(-4rem);
 }
 html {
   scroll-behavior: smooth;
+}
+input{
+
 }
 main {
     background: #333;
