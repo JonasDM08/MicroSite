@@ -80,6 +80,16 @@ div img{
     color: white;
     
   }
+
+  .fade-hero {
+    position: absolute;
+    bottom: 0;          
+    left: 0;
+    width: 100%;
+    height: 40%;         
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, black 100%);
+  }
+  
  
   /* ||INFORMATIE: Container voor secties|| */
   
@@ -93,12 +103,7 @@ div img{
     color: white;
   }
 
-  .Footer-MeerLezen {
-    
-    background-color: white;
-    display: flex;
-  }
-
+  
   .lees-meer-btn-GTI {
     display: inline-flex;           
     align-items: center;            
@@ -126,18 +131,26 @@ div img{
     border-radius: 50%;
   }
   .lees-meer-btn-GTI:hover .btn-arrow {
-    border-left-color: #fff; 
     transform: scale(110%);
   }
 
   
-  /* INFORMATIE: Over Ons sectie stijlen */
+  /* ||INFORMATIE: Over Ons sectie stijlen|| */
 
-  .container {
+  .OverOns {
     width: 100%;
     height: 700px;
     padding-right: 60px;
     padding-left: 60px ;
+  }
+
+  .fade-OverOns {
+    /*position: absolute;*/
+    bottom: 90;          
+    left: 0;
+    width: 100%;
+    height: 40%;         
+    background: linear-gradient(to top, rgb(255, 255, 255) 0%, black 100%);
   }
 
   .h2-Over-Ons {
@@ -145,20 +158,20 @@ div img{
     text-align: end;
   }
   
-  .services-grid {
+  .OverOns-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
   }
   
-  .service-item {
+  .OverOns-item {
     flex: 1;
     min-width: 250px;
     background: #f4f4f4;
     padding: 20px;
     border-radius: 5px;
   }
-  .service-item2 {
+  .OverOns-item2 {
     height: 300px;
     flex: 2;
     min-width: 250px;
@@ -173,44 +186,45 @@ div img{
 
   
   
-  .service-item h3 {
+  .OverOns-item h3 {
     font-size: 28px;
     margin-bottom: 10px;
   }
   
-  .service-item p {
+  .OverOns-item p {
     font-size: 16px;
   }
   
-  .lees-meer-btn-footer {
+  .lees-meer-btn-OverOns {
     display: inline-flex;           
     align-items: center;            
     text-decoration: none;           
-    color: #000000;                     
-    border: 1px solid #000000;
-    padding: 8px 12px;  
+    color: black;                     
+    border: 1px solid black;
+    padding: 8px 12px;
     font-family: Arial, sans-serif;  
-    /*transition: background 0.2s ease;*/
+    transition: border-radius 1s, transform 3s;
   }
+  .lees-meer-btn-OverOns:hover {
+    background: whitesmoke;  
+    color: #3b1c1c;      
+    border-radius: 50%;
+  }
+
+  .lees-meer-btn-OverOns :hover .btn-arrow { 
+    transform: scale(110%);
+  }
+
   .lees-meer-btn-footer .btn-text {
     margin-right: 8px; 
   }
   
-  /* Pijl rechts, met verticale scheidingslijn links ervan */
+  
   .lees-meer-btn-footer .btn-arrow {
     padding-left: 8px;
     border-left: 1px solid #000; 
   }
   
-  /* Hover-effect (optioneel) */
-  .lees-meer-btn-footer :hover {
-    background: #000;  
-    color: #fff;      
-    border-color: #000;
-  }
-  .lees-meer-btn-footer :hover .btn-arrow {
-    border-left-color: #fff; 
-  }
 
 
   /* ||INFORMATIE: carriére sectie stijlen|| */
@@ -283,13 +297,4 @@ div img{
     object-fit: cover;
     display: block;
     
-}
-
-.fade {
-  position: absolute;
-  bottom: 0;          
-  left: 0;
-  width: 100%;
-  height: 30%;         
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, black 100%);
 }
