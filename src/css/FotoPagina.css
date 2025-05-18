@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding-top: 60px; /* ruimte onder fixed header */
+}
+
+/* Banner container */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 400px;  /* hoogte banner */
+  background-image: url('/src/Afbeeldingen/Banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+/* Doorzichtige header over de banner */
+header {
+   position: fixed; /* boven op de banner */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;   /* hoogte header */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  background-color: rgba(0, 0, 0, 0.3); /* transparant zwart */
+  color: white;
+  font-weight: bold;
+  box-sizing: border-box;
+  user-select: none;
+
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav.navigation {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+}
+
+nav.navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.042);
+  backdrop-filter: blur(6px);
+  transition: background-color 0.3s ease;
+}
+
+nav.navigation a:hover {
+  background-color: #3498db;
+}
+
+/* Grid container krijgt nu padding links en rechts */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(3, 370px);
+  gap: 20px;
+  max-width: 1560px;
+  margin: 40px auto 0 auto; /* top margin */
+  width: 100%;
+  padding: 0 60px; /* ← ruimte links en rechts */
+  box-sizing: border-box;
+}
+
+
+.box {
+  background-color: #000000;  /* zwart */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-weight: bold;
+  overflow: hidden;
+  aspect-ratio: 500 / 370;
+  max-width: 520px;  /* iets groter dan 500 */
+  width: 100%;
+  padding: 10px;  /* ruimte tussen box rand en foto */
+  box-sizing: border-box;
+}
+ 
+
+.box:hover img {
+  transform: scale(1.1);
+}
+
+/* Media query: geen hover effect op kleine schermen */
+@media (max-width: 600px) {
+  .box:hover img {
+    transform: none;
+  }
+}
+
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;  /* iets minder afgerond dan box */
+  display: block;
+  pointer-events: none;
+  transition: transform 0.5s ease;
+}
+
+
+
