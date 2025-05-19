@@ -185,3 +185,66 @@ nav.navigation a:hover {
     font-size: 1rem;
   }
 }
+
+footer {
+  background-color: #111;
+  color: white;
+  padding: 40px 20px 20px 20px;
+  font-size: 14px;
+  margin-top: 60px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.footer-section {
+  max-width: 300px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 10px;
+  color: #3498db;
+}
+
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contact li {
+  margin-bottom: 6px;
+}
+
+.footer-contact a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: #fff;
+}
+
+.social-icons a {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  color: #777;
+}
