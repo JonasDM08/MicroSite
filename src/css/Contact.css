@@ -6,7 +6,7 @@
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 2;
-    color: #515151;
+    color: #dbdbdb;
 }
 body a{
     color: white;
@@ -94,13 +94,25 @@ footer{
 }
 form h3 {
     margin: 20px 0 10px;
-    color: #d6d6d6;
+    color: #f8f8f8;
 }
 .form_label{
     display: block;
   transition: all 0.3s;
   transform: translateY(0rem);
 }
+form input,
+form textarea,
+form select {
+    background-color: #1e1e1e;
+    border: 1px solid #555;
+    color: white;
+}
+form input::placeholder,
+form textarea::placeholder {
+    color: #ccc;
+}
+
 .form_input:placeholder-shown + .form_label {
   opacity: 0;
   visibility: hidden;
