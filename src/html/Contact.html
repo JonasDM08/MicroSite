@@ -24,20 +24,66 @@
     <main>
         <div class="container">
             <form action="https://httpbin.org/post" method="POST">
-                <div class="form__group field">
-                    <input type="input" class="form_field" placeholder="Naam" name="naam" id='naam' required />
-                    <label for="naam" class="form_label">Naam</label>
-                </div>
-                <label>Achternaam*</label><br>
-                <input name="achternaam" type="text" required autocomplete="on" placeholder="Achternaam"><br>
-                <label>E-mail*</label><br>
-                <input name="e-mail" type="email" required autocomplete="on"><br>
-                <label>Telefoon</label><br>
-                <input name="telefoon" type="tel" autocomplete="on"><br>
-                <label>Opmerking</label><br>
-                <textarea placeholder=""></textarea><br>
-                <button type="submit" class="submit-btn">Verstuur</button>
-            </form>
+                    <h3>Persoonlijke gegevens</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                        <label for="naam">Voornaam:</label>
+                        <input type="text" name="naam" id="naam" placeholder="Voornaam *" required>
+                        </div>
+                        <div class="form-group">
+                        <label for="achternaam">Achternaam:</label>
+                        <input type="text" name="achternaam" id="achternaam" placeholder="Achternaam *" required>
+                        </div>
+                        <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="e-mail" id="email" placeholder="E-mail *" required>
+                        </div>
+                        <div class="form-group">
+                        <label for="telefoon">Telefoon:</label>
+                        <input type="tel" name="telefoon" id="telefoon" placeholder="Telefoonnummer">
+                        </div>
+                    </div>
+                    <h3>Adresgegevens</h3>
+                    <div class="form-grid">
+                    <div class="form-group">
+                        <label for="straat">Straat:</label>
+                        <input type="text" name="straat" id="straat" placeholder="Straat">
+                    </div>
+                    <div class="form-group">
+                        <label for="huisnummer">Huisnummer:</label>
+                        <input type="text" name="huisnummer" id="huisnummer" placeholder="Huisnummer">
+                    </div>
+                    <div class="form-group">
+                        <label for="plaats">Plaats:</label>
+                        <input type="text" name="plaats" id="plaats" placeholder="Plaats">
+                    </div>
+                    <div class="form-group">
+                        <label for="plaats">Postcode:</label>
+                        <input type="text" name="postcode" id="postcode" placeholder="Postcode">
+                    </div>
+                    </div>
+
+                    <h3>Bericht</h3>
+                    <div class="form-grid">
+                        <div class="form-group full-width">
+                        <label for="reden">Reden van contact:</label>
+                        <select id="reden" name="reden" required>
+                            <option value="">Selecteer een reden *</option>
+                            <option value="info">Ik wens informatie</option>
+                            <option value="vraag">Ik heb een vraag</option>
+                            <option value="afspraak">Ik wil een afspraak maken</option>
+                            <option value="anders">Anders</option>
+                        </select>
+                        </div>
+                        <div class="form-group full-width">
+                        <label for="opmerking">Opmerking:</label>
+                        <textarea id="opmerking" name="opmerking" placeholder="Uw bericht..." rows="5"></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Verstuur</button>
+                    </form>
+
         </div>
     </main>
     <footer>
