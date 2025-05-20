@@ -183,3 +183,37 @@ a {
   a:hover {
     color: orangered !important;
   }
+
+  .WatIsADB{
+    height: 50vh;
+     width: 100%;
+    padding-bottom: 40px;
+    margin: none;
+    padding-left:  60px;
+   background: linear-gradient(rgba(0, 0, 0, 1) 30%, rgba(255, 255, 255, 1) 100%);
+    color: white;
+    display: flex;
+  }
+  .LeerlingenProfiel{
+     height: 50vh;
+     width: 100%;
+    padding-bottom: 40px;
+    margin: none;
+    padding-left:  60px;
+    background: linear-gradient(white,rgba(225, 225, 225, 1) 40%, rgba(0, 0, 0, 1) 100%);
+    color: black;
+    display: flex;
+  }
+  .AanbiedingRichting{
+     height: 50vh;
+     width: 100%;
+    padding-bottom: 40px;
+    margin: none;
+    padding-left:  60px;
+   background: linear-gradient(rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    color: white;
+    display: flex;
+  }
+ 
+   
+  
