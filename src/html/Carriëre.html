@@ -9,16 +9,54 @@
     <title>Carrière - Website Ontwerpen</title>
 </head>
 <body>
-    <section class="menu">
-        <nav class="navigation">
-            <a href="Home.html">Home</a> 
-            <a href="About.html">Over ADB</a> 
-            <a href="Carriëre.html">Carriére</a> 
-            <a href="FotoPagina.html">Fotos</a>
-            <a href="Contact.html">Contact</a>
-        </nav>
-        <script src="/src/scripts/AllPages.js"></script>
-    </section>
+    <header class="header">
+        
+        <div class="containerhead">
+            <a href="Home.html">
+                <div class="wrapper">
+                    <img
+                    src="../CarriereWebsite/images/LogoADB_1.png"
+                    alt="Navigeer naar de homepage"
+                    class="image"
+                    />
+                    <svg viewBox="0 0 200 200">
+                    <rect
+                        x="1.5"
+                        y="1.5"
+                        width="197"
+                        height="197"
+                        rx="5"
+                        ry="5"
+                        class="border-base"
+                    />
+                    <rect
+                        x="1.5"
+                        y="1.5"
+                        width="197"
+                        height="197"
+                        rx="5"
+                        ry="5"
+                        class="border-anim"
+                    />
+                    </svg>
+                </div>
+            </a>
+
+            <h1 class="title">Carrière</h1>
+
+            <nav class="nav">
+                <a href="">Home</a>
+                <a href="">Over</a>
+                <a href="../CarriereWebsite/index.html">Carrière</a>
+                <a href="">Contact</a>
+                <button class="abonneren">
+                    Abonneren
+                </button>
+            </nav>
+            <script src="scripts/Carriërescriptheader.js"></script>
+        </div>
+        
+    </header>
         
 
     <main class="container">
@@ -28,10 +66,14 @@
         </section>
         <section class="banner">
             <figure>
-                <img src="../CarriereWebsite/images/10_coding_dribbble.gif" alt="gif" title="gif">
+                <a href="Home.html"><img src="../CarriereWebsite/images/10_coding_dribbble.gif" alt="gif" title="gif"></a>
+                
             </figure>
         </section>
+
         <section class="verder">
+            
+
             <section class="achtergrondverder">
                 <br>
                 <hr>
@@ -49,9 +91,14 @@
                             <p>Leer ethisch hacken, databeveiliging en incidentrespons.</p>
                             <p>Deze opleiding biedt kansen in een snelgroeiende sector.</p>
                             <br>
-                            <button class="button-89" role="button">
-                                <a href="https://www.howest.be/nl/opleidingen/bachelor/cybersecurity" target="_blank">Meer info</a>
-                            </button>
+
+                            <div class="animation-container">
+                                <div class="building left-building"></div>
+                                <div class="building right-building"></div>
+                                <button class="button-89" role="button" data-link="https://www.howest.be/nl/opleidingen/bachelor/cybersecurity">Meer info</button>
+                            </div>
+                            
+                            
                         </div>
                         <div class="cyber-afbeelding verderafbeeldingen">
                             <img src="../CarriereWebsite/images/cybersecurity.beter.jpg" alt="cybersecurity" title="cyber security">
@@ -65,9 +112,12 @@
                             <p>Leer deep learning en operations om modellen efficiënt te implementeren.</p>
                             <p>Volg lessen op campus, online of via afstandsonderwijs.</p>
                             <br>
-                            <button class="button-89" role="button">
-                                <a href="https://www.hogent.be/opleidingen/micro-degrees/ai-data-engineer/" target="_blank">Meer info</a>
-                            </button>
+
+                            <div class="animation-container">
+                                <div class="building left-building"></div>
+                                <div class="building right-building"></div>
+                                <button class="button-89" role="button" data-link="https://www.hogent.be/opleidingen/micro-degrees/ai-data-engineer/">Meer info</button>
+                            </div>
                         </div>
                         <div class="ai-afbeelding verderafbeeldingen">
                             <img src="../CarriereWebsite/images/ai&dataengineer.beter.jpg" alt="ai-afbeelding" title="ai-afbeelding">
@@ -81,9 +131,11 @@
                             <p>Leer over netwerken, AI, software en tools zoals React.</p>
                             <p>Gebruik theorie en praktijk om een goede web developer te worden.</p>
                             <br>
-                            <button class="button-89" role="button">
-                                <a href="https://www.odisee.be/opleidingen/bachelor-elektronica-ict" target="_blank">Meer info</a>
-                            </button>
+                            <div class="animation-container">
+                                <div class="building left-building"></div>
+                                <div class="building right-building"></div>
+                                <button class="button-89" role="button" data-link="https://www.odisee.be/opleidingen/bachelor-elektronica-ict">Meer info</button>
+                            </div>
                         </div>
                         <div class="web-afbeelding verderafbeeldingen">
                             <img src="../CarriereWebsite/images/Web development.beter.jpg" alt="web development" title="Web Development">
@@ -97,9 +149,11 @@
                             <p>Krijg praktische training van ervaren Cisco-instructeurs, online of op campus.</p>
                             <p>Perfect voor IT-professionals en studenten die netwerkbeheer willen leren.</p>
                             <br>
-                            <button class="button-89" role="button">
-                                <a href="https://www.ucll.be/nl/softwaredevelopment" target="_blank">Meer info</a>
-                            </button>
+                            <div class="animation-container">
+                                <div class="building left-building"></div>
+                                <div class="building right-building"></div>
+                                <button class="button-89" role="button" data-link="https://www.ucll.be/nl/softwaredevelopment">Meer info</button>
+                            </div>
                         </div>
                         <div class="software-afbeelding verderafbeeldingen">
                             <img src="../CarriereWebsite/images/software-development.beter.jpg" alt="Software Development" title="Software Development">
@@ -113,9 +167,11 @@
                             <p>Krijg training van ervaren Cisco-instructeurs op campus of online.</p>
                             <p>Ideaal voor IT-professionals en studenten die netwerkbeheer willen leren.</p>
                             <br>
-                            <button class="button-89" role="button">
-                                <a href="https://www.hogent.be/opleidingen/micro-degrees/network-administrator/" target="_blank">Meer info</a>
-                            </button>
+                            <div class="animation-container">
+                                <div class="building left-building"></div>
+                                <div class="building right-building"></div>
+                                <button class="button-89" role="button" data-link="https://www.hogent.be/opleidingen/micro-degrees/network-administrator/">Meer info</button>
+                            </div>
                         </div>
                         <div class="network-afbeelding verderafbeeldingen">
                             <img src="../CarriereWebsite/images/network-administration.beter.jpg" alt="Network Administrator" title="Network Administrator">
@@ -129,9 +185,11 @@
                             <p>Verdiep je in backend, frontend, AI, data science en samenwerken.</p>
                             <p>Ontwikkel oplossingen en begin als softwareontwikkelaar.</p>
                             <br>
-                            <button class="button-89" role="button">
-                                <a href="https://thomasmore.be/nl/opleidingen/professionele-bachelor/toegepaste-informatica/application-development/geel/basistraject" target="_blank">Meer info</a>
-                            </button>
+                            <div class="animation-container">
+                                <div class="building left-building"></div>
+                                <div class="building right-building"></div>
+                                <button class="button-89" role="button" data-link="https://thomasmore.be/nl/opleidingen/professionele-bachelor/toegepaste-informatica/application-development/geel/basistraject">Meer info</button>
+                            </div>
                         </div>
                         <div class="app-afbeelding verderafbeeldingen">
                             <img src="../CarriereWebsite/images/app-development.beter.jpg" alt="Application Development" title="Application Development">
@@ -158,9 +216,13 @@
                             <p>Programmeren zit in alles, van social media tot robots.</p>
                             <p>Zo creëer en pas je technologie zelf aan.</p>
                             <br>
-                            <button class="button-89" role="button">
-                                <a href="">Meer info</a>
-                            </button>
+                            <div class="animation-container">
+                                <div class="building left-building"></div>
+                                <div class="building right-building"></div>
+                                <button class="button-89" role="button" data-link="">
+                                    Meer info
+                                </button>
+                            </div>
                         </div>
                         <div class="eerste-afbeelding verderafbeeldingen">
                             <img src="../CarriereWebsite/images/programmeren.beter.png" alt="Application Development" title="Programmeur">
@@ -175,9 +237,13 @@
                             <p>Ze zorgen voor werking, snelheid en een mooi design.</p>
                             <p>Hiervoor gebruiken ze HTML, CSS en JavaScript.</p>
                             <br>
-                            <button class="button-89" role="button">
-                                <a href="">Meer info</a>
-                            </button>
+                            <div class="animation-container">
+                                <div class="building left-building"></div>
+                                <div class="building right-building"></div>
+                                <button class="button-89" role="button" data-link="">
+                                    Meer info
+                                </button>
+                            </div>
                         </div>
                         <div class="tweede-afbeelding verderafbeeldingen">
                             <img src="../CarriereWebsite/images/web developer.beter.png" alt="Application Development" title="Web Developer">
@@ -192,9 +258,13 @@
                         <p>Ze combineren design en code voor een soepele ervaring.</p>
                         <p>Zo helpen ze mensen sneller en makkelijker te werken.</p>
                         <br>
-                        <button class="button-89" role="button">
-                            <a href="">Meer info</a>
-                        </button>
+                        <div class="animation-container">
+                            <div class="building left-building"></div>
+                            <div class="building right-building"></div>
+                            <button class="button-89" role="button" data-link="">
+                                Meer info
+                            </button>
+                        </div>
                         </div>
                         <div class="derde-afbeelding verderafbeeldingen">
                             <img src="../CarriereWebsite/images/UI-developer.beter.png" alt="Application Development" title="UI-developer">
@@ -209,9 +279,13 @@
                             <p>Ze zorgen voor gameplay, graphics en prestaties.</p>
                             <p>Games worden ontwikkeld voor pc, consoles en mobiel.</p>
                             <br>
-                            <button class="button-89" role="button">
-                                <a href="">Meer info</a>
-                            </button>
+                            <div class="animation-container">
+                                <div class="building left-building"></div>
+                                <div class="building right-building"></div>
+                                <button class="button-89" role="button" data-link="">
+                                    Meer info
+                                </button>
+                            </div>
                         </div>
                         <div class="vierde-afbeelding verderafbeeldingen">
                             <img src="../CarriereWebsite/images/game designer.beter.png" alt="Application Development" title="Game Developer">
@@ -226,9 +300,13 @@
                             <p>Dit omvat financiën, planningen en belangrijke documenten.</p>
                             <p>Zo blijft alles overzichtelijk en efficiënt.</p>
                             <br>
-                            <button class="button-89" role="button">
-                                <a href="">Meer info</a>
-                            </button>
+                            <div class="animation-container">
+                                <div class="building left-building"></div>
+                                <div class="building right-building"></div>
+                                <button class="button-89" role="button" data-link="">
+                                    Meer info
+                                </button>
+                            </div>
                         </div>
                         <div class="vijfde-afbeelding verderafbeeldingen">
                             <img src="../CarriereWebsite/images/De administratie;BETER.jpg" alt="Application Development" title="Administratie">
@@ -243,9 +321,13 @@
                             <p>Met ethisch hacken helpen ze bedrijven zich te beschermen.</p>
                             <p>Zo voorkomen ze misbruik door kwaadwillende hackers.</p>
                             <br>
-                            <button class="button-89" role="button">
-                                <a href="">Meer info</a>
-                            </button>
+                            <div class="animation-container">
+                                <div class="building left-building"></div>
+                                <div class="building right-building"></div>
+                                <button class="button-89" role="button" data-link="">
+                                    Meer info
+                                </button>
+                            </div>
                         </div>
                         <div class="zesde-afbeelding verderafbeeldingen">
                             <img src="../CarriereWebsite/images/penetratie-test.beter.png" alt="Application Development" title="Penetrator Tester">
@@ -253,52 +335,82 @@
                     </div>
 
                 </div>
-                <br>
+                
             </section>
-            <br>
+            
         </section>
     </main>
-    <footer>
-        <div class="footer">
-            <div class="footer-section">
-                <figure>
-                    <img src="../CarriereWebsite/images/Schermafbeelding 2025-03-13 193406.png" title="GTI BEVEREN LOGO" alt="GTI BEVEREN LOGO" class="footer-logo">
-                </figure>
-            </div>
-            <div class="footer-section">
-                <h4>Contact DirectieTeam</h4>
-                <ul class="footer-contact">
-                    <li>Tel: 03 750 19 00</li>
-                    <li>E-mail: <a href="mailto:info@site.com">info@site.com</a></li>
-                    <li>Europalaan 1 • 9120 Beveren</li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <form class="subscribe-form">
-                    <button type="submit">Contact</button>
-                </form>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="social-icons">
-                <a href="#">🔗</a>
-                <a href="">📘</a>
-                <a href="#">🐦</a>
-                <a href="#">📷</a>
-            </div>
-        </div>
-        <br>
-    </footer>
-    <script>
-    const crypto = require('crypto');
+    <!-- Footer Sectie -->
 
-const secret = '18yc5990wjap6aswq0pa94ity45bnxzm'; // Your verification secret key
-const userId = current_user.id // A string UUID to identify your user
-
-const hash = crypto.createHmac('sha256', secret).update(userId).digest('hex');
-</script>
-<script>
-    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="gN-MJpKsYV5ckF4ihEd0g";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-    </script>
+  <footer>
+    <div class="footer">
+        <div class="footer-section">
+            <figure>
+                <img src="../CarriereWebsite/images/Schermafbeelding 2025-03-13 193406.png" title="GTI BEVEREN LOGO" alt="GTI BEVEREN LOGO" class="footer-logo">
+            </figure> 
+        </div>
+        <div class="footer-section">
+            <h4>Contact DirectieTeam</h4>
+            <ul class="footer-contact">
+                <li>Tel: 03 750 19 00</li>
+                <li>E-mail: <a href="mailto:info@site.com">info@site.com</a></li>
+                <li>Europalaan 1 • 9120 Beveren</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <form class="subscribe-form">
+                <button type="submit">Contact</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="social-icons">
+            <a href="#">🔗</a>
+            <a href="">📘</a>
+            <a href="#">🐦</a>
+            <a href="#">📷</a>
+        </div>
+    </div>
+    <br>
+</footer>
 </body>
 </html>
+
+<script>
+    const buttons = document.querySelectorAll('.button-89');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            const target = e.currentTarget;
+            const link = target.getAttribute('data-link');
+
+            // Add swirl animation
+            target.classList.add('swirl');
+
+            // Disable to prevent multiple clicks
+            target.disabled = true;
+
+            // Wait for the animation (0.8s), then redirect
+            setTimeout(() => {
+                window.location.href = link;
+            }, 800);
+        });
+    });
+</script>
+
+<script>const header = document.querySelector('header'); // Ensure header is selected
+header.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const maxScroll = 400;
+
+    if (scrollY <= maxScroll) {
+        const progress = scrollY / maxScroll;
+        header.style.transform = `translateY(${scrollY}px)`;
+        header.style.opacity = `${1 - progress}`; // Smooth fade-out
+    } else {
+        header.style.transform = `translateY(${maxScroll}px)`;
+        header.style.opacity = '0'; // Fully faded out after 400px
+    }
+});
+</script>
