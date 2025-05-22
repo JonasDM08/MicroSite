@@ -48,142 +48,57 @@ h2{
     font-size: 36px;
 }
 
-.wrapper {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin-left: 40%;
-  }
-  .image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-    display: block;
-    transition: transform 0.3s ease;
-  }
-  .wrapper:hover .image {
-    transform: scale(1.05);
-  }
-  svg {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-  }
-  .border-base {
-    fill: none;
-    stroke: #3498db;
-    stroke-width: 3;
-    stroke-linejoin: round;
-    stroke-linecap: round;
-    opacity: 0.2;
-  }
-  .border-anim {
-    fill: none;
-    stroke: #3498db;
-    stroke-width: 3;
-    stroke-linejoin: round;
-    stroke-linecap: round;
-
-    stroke-dasharray: 180 608; /* dash + gap = 788 perimeter */
-    stroke-dashoffset: 0;
-
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    animation-play-state: paused;
-  }
-  .wrapper:hover .border-anim {
-    opacity: 1;
-    animation: dashmove 5.5s linear infinite;
-    animation-play-state: running;
-  }
-  @keyframes dashmove {
-    to {
-      stroke-dashoffset: -788; /* exact perimeter */
-    }
-  }
-
-
-
-
-
-.containerhead{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+a {
+  text-decoration: none;
+  color: white; 
+  margin: 10px;
+  font-size: 1.1rem;
 }
 
-.nav{
-    grid-area: nv;
-    color: white;    
-    display: flex;
-    gap: 0.5em;
-    padding-right: 10%;
-    align-items: center;
+nav{
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
-.nav a{
-    text-decoration: none;
-    color: white;
-    padding: 0.5rem;
-    position: relative;
-    padding-bottom: 5px;
+
+
+div img{
+  margin-right: auto;
 }
 
-.nav a::after{
-content: ""; 
-position: absolute;
-left: 50%;
-bottom: 0;
-width: 0;
-height: 2px;
-background-color: rgb(251, 143, 161);
-transition: width 0.3s ease-in-out , left 0.3s ease-in-out;
+.menu {
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: transparent;
+  transition: background-color 0.5s ease-in;
+  text-align: right;
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  z-index: 1;
 }
 
-.nav a:hover::after{
-width: 100%;
-left: 0;
+.menu.scrolled{
+  background-color: white;
+  color: black;
 }
 
-.nav a:hover{
-    color: rgb(251, 143, 161);
-    transition-duration: 0.5s;
+.menu:hover {
+  background-color: white; 
+  color: white;
 }
 
-.abonneren{
-    background-color: #000;
-    border: none;
-    padding: 0.5rem;
-    font-size: 1rem;
-    width: 7em;
-    border-radius: 0.65rem;
-    cursor: pointer;
-    color: white;
-    border: white 2px solid;
+.menu:hover a {
+  color: black;
+  transition: color 0.35s ease-in;
+
 }
 
-   
-.abonneren:active {
-    color: black;
-    box-shadow: 0 0.2rem #dfd9d9;
-    transform: translateY(0.2);
-}
-   
-.abonneren:hover:not(:disabled) {
-    background: white;
-    color: black;
-    border: 2px solid black;
-    transition-duration: 0.5s;
-}
-   
-.abonneren:disabled {
-    cursor: auto;
-    color: grey;
+a:hover{
+  color: orangered !important;
+  text-decoration: underline;
 }
 
 
@@ -399,9 +314,9 @@ h1{
 
  /* INFORMATIE: Footer sectie stijlen */
   .footer {
-    background: linear-gradient(to top, rgb(255, 255, 255) 0%, black 100%);
-    background-size: 150% ;
-    color: black;
+    background: linear-gradient(to top, black 100%,rgb(255, 255, 255) 30%);
+    background-size: 100%;
+    color: white;
     padding: 40px 10%;
     display: flex;
     justify-content: space-between;
@@ -409,8 +324,8 @@ h1{
     text-align: center;
 }
 .footer-logo {
-    width: 85%;
-    height: 90%;
+    width: 90%;
+    height: 70px;
     border: 2px solid black;
     border-radius: 10px;
 }
@@ -429,7 +344,7 @@ h1{
     margin: 5px 0;
 }
 .footer-contact a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 .footer-contact a:hover {
