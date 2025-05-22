@@ -398,3 +398,19 @@
     });
 </script>
 
+<script>const header = document.querySelector('header'); // Ensure header is selected
+header.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const maxScroll = 400;
+
+    if (scrollY <= maxScroll) {
+        const progress = scrollY / maxScroll;
+        header.style.transform = `translateY(${scrollY}px)`;
+        header.style.opacity = `${1 - progress}`; // Smooth fade-out
+    } else {
+        header.style.transform = `translateY(${maxScroll}px)`;
+        header.style.opacity = '0'; // Fully faded out after 400px
+    }
+});
+</script>
