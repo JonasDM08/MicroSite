@@ -9,23 +9,38 @@ body {
   box-sizing: border-box;
 }
 
-/* Banner container */
 .banner {
- 
-    position: relative;
-    background-image: url(/src/Afbeeldingen/Banner.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    
+  position: relative;
+  background-color: #000;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
+.banner .banner-text {
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  padding: 0 20px;
+}
 
+.banner h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.banner p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
 
 header {
   position: fixed;
@@ -41,7 +56,7 @@ header h1 {
   font-size: 24px;
 }
 
- h2 {
+h2 {
   text-align: center;
   color: white;
   margin: 0;
@@ -55,15 +70,13 @@ a {
   font-size: 1.1rem;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: end;
   align-items: center;
 }
 
-
-
-div img{
+div img {
   margin-right: auto;
 }
 
@@ -80,7 +93,7 @@ div img{
   z-index: 1;
 }
 
-.menu.scrolled{
+.menu.scrolled {
   background-color: white;
   color: black;
 }
@@ -93,10 +106,9 @@ div img{
 .menu:hover a {
   color: black;
   transition: color 0.35s ease-in;
-
 }
 
-a:hover{
+a:hover {
   color: orangered !important;
   text-decoration: underline;
 }
@@ -111,7 +123,6 @@ a:hover{
   padding: 0 40px;
   box-sizing: border-box;
 }
-
 
 .box {
   position: relative;
@@ -148,13 +159,25 @@ a:hover{
   z-index: 2;
 }
 
-
 .gradient {
-    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 255, 255));
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 255, 255));
 }
 
+.box-row {
+  position: relative;
+  margin-bottom: 60px;
+}
 
-
+.box-row::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7));
+  z-index: -1;
+}
 
 @media (min-width: 1400px) {
   .grid-container {
@@ -179,7 +202,6 @@ a:hover{
   }
 }
 
-/* Laptop breedte */
 @media (max-width: 1200px) {
   .grid-container {
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
@@ -187,7 +209,6 @@ a:hover{
   }
 }
 
-/* Tablet */
 @media (max-width: 900px) {
   .grid-container {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -195,7 +216,6 @@ a:hover{
   }
 }
 
-/* Mobiel */
 @media (max-width: 600px) {
   .grid-container {
     grid-template-columns: 1fr;
