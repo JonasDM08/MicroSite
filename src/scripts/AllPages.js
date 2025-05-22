@@ -11,7 +11,7 @@ window.addEventListener('scroll', function() {
         menu.style.backgroundColor = 'transparent';
         Array.from(links).forEach(link => link.style.color = 'white');
     }
-    if (window.scrollY > 750) {
+    if (window.scrollY > 500) {
         menu.style.transform = 'translateY(-100%)';
         menu.style.opacity = '0';
         menu.style.transition = 'transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease';

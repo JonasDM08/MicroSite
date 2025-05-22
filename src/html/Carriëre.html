@@ -9,54 +9,16 @@
     <title>Carrière - Website Ontwerpen</title>
 </head>
 <body>
-    <header class="header">
-        
-        <div class="containerhead">
-            <a href="Home.html">
-                <div class="wrapper">
-                    <img
-                    src="../CarriereWebsite/images/LogoADB_1.png"
-                    alt="Navigeer naar de homepage"
-                    class="image"
-                    />
-                    <svg viewBox="0 0 200 200">
-                    <rect
-                        x="1.5"
-                        y="1.5"
-                        width="197"
-                        height="197"
-                        rx="5"
-                        ry="5"
-                        class="border-base"
-                    />
-                    <rect
-                        x="1.5"
-                        y="1.5"
-                        width="197"
-                        height="197"
-                        rx="5"
-                        ry="5"
-                        class="border-anim"
-                    />
-                    </svg>
-                </div>
-            </a>
-
-            <h1 class="title">Carrière</h1>
-
-            <nav class="nav">
-                <a href="">Home</a>
-                <a href="">Over</a>
-                <a href="../CarriereWebsite/index.html">Carrière</a>
-                <a href="">Contact</a>
-                <button class="abonneren">
-                    Abonneren
-                </button>
-            </nav>
-            <script src="scripts/Carriërescriptheader.js"></script>
-        </div>
-        
-    </header>
+    <section class="menu">
+        <nav class="navigation">
+            <a href="Home.html">Home</a> 
+            <a href="About.html">Over ADB</a> 
+            <a href="Carriëre.html">Carriére</a> 
+            <a href="FotoPagina.html">Fotos</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    <script src="/src/scripts/AllPages.js"></script>
+    </section>
         
 
     <main class="container">
@@ -375,42 +337,3 @@
 </footer>
 </body>
 </html>
-
-<script>
-    const buttons = document.querySelectorAll('.button-89');
-
-    buttons.forEach(button => {
-        button.addEventListener('click', (e) => {
-            const target = e.currentTarget;
-            const link = target.getAttribute('data-link');
-
-            // Add swirl animation
-            target.classList.add('swirl');
-
-            // Disable to prevent multiple clicks
-            target.disabled = true;
-
-            // Wait for the animation (0.8s), then redirect
-            setTimeout(() => {
-                window.location.href = link;
-            }, 800);
-        });
-    });
-</script>
-
-<script>const header = document.querySelector('header'); // Ensure header is selected
-header.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
-window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
-    const maxScroll = 400;
-
-    if (scrollY <= maxScroll) {
-        const progress = scrollY / maxScroll;
-        header.style.transform = `translateY(${scrollY}px)`;
-        header.style.opacity = `${1 - progress}`; // Smooth fade-out
-    } else {
-        header.style.transform = `translateY(${maxScroll}px)`;
-        header.style.opacity = '0'; // Fully faded out after 400px
-    }
-});
-</script>

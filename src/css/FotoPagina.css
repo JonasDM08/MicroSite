@@ -33,17 +33,7 @@ header {
   left: 0;
   width: 100%;
   height: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 40px;
-  background-color: rgba(0, 0, 0, 0.3);
-  color: white;
-  font-weight: bold;
-  box-sizing: border-box;
-  user-select: none;
-
-  z-index: 1000; 
+  display: flex; 
 }
 
 header h1 {
@@ -58,24 +48,57 @@ header h1 {
   font-size: 24px;
 }
 
-nav.navigation {
-  display: flex;
-  gap: 20px;
-  font-size: 18px;
-}
-
-nav.navigation a {
-  color: white;
+a {
   text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.042);
-  backdrop-filter: blur(6px);
-  transition: background-color 0.3s ease;
+  color: white; 
+  margin: 10px;
+  font-size: 1.1rem;
 }
 
-nav.navigation a:hover {
-  background-color: #3498db;
+nav{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+
+
+div img{
+  margin-right: auto;
+}
+
+.menu {
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: transparent;
+  transition: background-color 0.5s ease-in;
+  text-align: right;
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  z-index: 1;
+}
+
+.menu.scrolled{
+  background-color: white;
+  color: black;
+}
+
+.menu:hover {
+  background-color: white; 
+  color: white;
+}
+
+.menu:hover a {
+  color: black;
+  transition: color 0.35s ease-in;
+
+}
+
+a:hover{
+  color: orangered !important;
+  text-decoration: underline;
 }
 
 .grid-container {
