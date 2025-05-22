@@ -5,7 +5,6 @@
 }
 
 body{
-    zoom: 0.75;
     background-color: white;
     font-family: 'Roboto', sans-serif;
     display: grid;
@@ -17,430 +16,119 @@ body{
     "ft ft ft";
 }
 
-.achtergrondverder{
-    background-color: #f5f5f5;
-}
-
-.achtergrondarbeid{
-    background-color: black;
-}
-
-.achtergrondarbeid h2{
-    color: white;
-}
-
 header{
+    grid-area: hd;
+    background-color: black;
+    color: white;
+    height: 250px;
+    display: flex;
+    align-items: center;
     padding: 10px 0;
 }
 
-a {
-  text-decoration: none;
-  color: white; 
-  margin: 15px;
-  font-size: 2rem;
-}
-
-nav{
-  display: flex;
-  justify-content: end;
-  align-items: center;
+main{
+    padding-top: 5%;
+    grid-area: mn;
+    background-color: white;
 }
 
 
 
-div img{
-  margin-right: auto;
-}
 
-.menu {
-  z-index: 1;
-  display: grid;
-  grid-template-columns: 1fr;
-  background-color: transparent;
-  transition: background-color 0.5s ease-in;
-  text-align: right;
-  position: fixed;
-  height: 80px;
-  width: 100%;
-  z-index: 1;
-}
-
-.menu.scrolled{
-  background-color: white;
-  color: black;
-}
-
-.menu:hover {
-  background-color: white; 
-  color: white;
-}
-
-.menu:hover a {
-  color: black;
-  transition: color 0.35s ease-in;
-
-}
-
-
-a:hover {
-  color: orangered !important;
-}
-
-h1{
+footer{
+    grid-area: ft;
+    background-color: black;
+    color: white;
     padding: 20px;
-    text-align: center;
-    font-size: 28px;
 }
 
-.intro p{
+h2{
     text-align: center;
-    padding: 20px;
-    margin-left: 30%;
-    margin-right: 30%;
+    justify-content: center;
+    font-size: 36px;
 }
+
+.wrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-left: 40%;
+  }
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  .wrapper:hover .image {
+    transform: scale(1.05);
+  }
+  svg {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  .border-base {
+    fill: none;
+    stroke: #3498db;
+    stroke-width: 3;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    opacity: 0.2;
+  }
+  .border-anim {
+    fill: none;
+    stroke: #3498db;
+    stroke-width: 3;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+
+    stroke-dasharray: 180 608; /* dash + gap = 788 perimeter */
+    stroke-dashoffset: 0;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    animation-play-state: paused;
+  }
+  .wrapper:hover .border-anim {
+    opacity: 1;
+    animation: dashmove 5.5s linear infinite;
+    animation-play-state: running;
+  }
+  @keyframes dashmove {
+    to {
+      stroke-dashoffset: -788; /* exact perimeter */
+    }
+  }
+
+
+
+
 
 .containerhead{
+    width: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
-}
-
-.container{
-    grid-area: mn;
-    transform: scale(0.75);
-    transform-origin: top left;
-    width: 133.33%; 
-    overflow-x: auto;
-}
-
-.container a{
-    text-decoration: none;
-    color: black;
-}
-
-.verder h2{
-    text-align: center;
+    align-items: center;
 }
 
 .nav{
     grid-area: nv;
-    color: white;
+    color: white;    
     display: flex;
     gap: 0.5em;
     padding-right: 10%;
     align-items: center;
 }
 
-
-.header{
-    grid-area: hd;
-}
-
-.logo{
-    margin-left: 10%; 
-    height: 50px;
-}
-
-.verder img{
-    padding-left: 10%;
-    border-radius: 10px;
-}
-
-.banner{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-.verderafbeeldingen{
-    display: flex;
-    
-}
-
-.arbeidsmarkt{
-    color: white;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-    grid-template-areas: 
-    "ee tw de"
-    "vi ij es";
-    gap: 2em;
-}
-
-.arbeidsmarkt .layout{
-    border: white 2px solid;
-}
-
-.verderstuderen .layout{
-    border: #000 2px solid;
-}
-
-.arbeidsmarkt .button-89{
-    color: white;
-}
-
-.center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.layout{
-    height: 230px;
-    flex-direction: column;
-    align-items:flex-start;
-    justify-content: center;
-    padding-left: 15px;
-    padding-right: 5%;
-    padding-top: 15px;
-    border-radius: 10px;
-}
-
-.layout p{
-    font-size: medium;
-    font-stretch: condensed;
-}
-
-.eerste{
-    margin-left: 10px;
-    grid-area: ee;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "eeco eeaf"
-}
-
-.eerste-content{
-    
-    grid-area: eeco;
-}
-
-.eerste-afbeelding{
-    
-    grid-area: eeaf;
-}
-
-.tweede{
-    grid-area: tw;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "twco twaf"
-}
-
-.tweede-content{
-    
-    grid-area: twco;
-}
-
-.tweede-afbeelding{
-    
-    grid-area: twaf;
-}
-
-
-.derde{
-    margin-right: 10px;
-    grid-area: de;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "deco deaf"
-}
-
-.derde-content{
-    
-    grid-area: deco;
-}
-
-.derde-afbeelding{
-    
-    grid-area: deaf;
-}
-
-.vierde{
-    grid-area: vi;
-    margin-left: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "vico viaf"
-}
-
-.vierde-content{
-    
-    grid-area: vico;
-}
-
-.vierde-afbeelding{
-    
-    grid-area: viaf;
-}
-
-.vijfde{
-    grid-area: ij;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "ijco ijaf"
-}
-
-.vijfde-content{
-    
-    grid-area: ijco;
-}
-
-.vijfde-afbeelding{
-    
-    grid-area: ijaf;
-}
-
-.zesde{
-    grid-area: es;
-    margin-right: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "zeco zeaf"
-}
-
-.zesde-content{
-    
-    grid-area: zeco;
-}
-
-.zesde-afbeelding{
-    
-    grid-area: zeaf;
-}
-.verderstuderen{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-    grid-template-areas: 
-    "cy ai we"
-    "so ne ap";
-    gap: 2em;
-}
-
-.cyber{
-    margin-left: 10px;
-    grid-area: cy;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "cbco cbaf"
-}
-
-.cyber-content{
-    
-    grid-area: cbco;
-}
-
-.cyber-afbeelding{
-    
-    grid-area: cbaf;
-}
-
-.ai{
-    grid-area: ai;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "aico aiaf"
-}
-
-.ai-content{
-    
-    grid-area: aico;
-}
-
-.ai-afbeelding{
-    
-    grid-area: aiaf;
-}
-
-.web{
-    grid-area: we;
-    margin-right: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "weco weaf"
-}
-
-.web-content{
-    
-    grid-area: weco;
-}
-
-.web-afbeelding{
-    
-    grid-area: weaf;
-}
-
-.software{
-    grid-area: so;
-    margin-left: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "soco soaf"
-}
-
-.software-content{
-    
-    grid-area: soco;
-}
-
-.software-afbeelding{
-    
-    grid-area: soaf;
-}
-
-.network{
-    grid-area: ne;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "neco neaf"
-}
-
-.network-content{
-    
-    grid-area: neco;
-}
-
-.network-afbeelding{
-    
-    grid-area: neaf;
-}
-
-.app{
-    grid-area: ap;
-    margin-right: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "apco apaf"
-}
-
-.app-content{
-    
-    grid-area: apco;
-}
-
-.app-afbeelding{
-    
-    grid-area: apaf;
-}
-
-
-
 .nav a{
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 0.5rem;
     position: relative;
     padding-bottom: 5px;
@@ -476,6 +164,7 @@ left: 0;
     border-radius: 0.65rem;
     cursor: pointer;
     color: white;
+    border: white 2px solid;
 }
 
    
@@ -497,151 +186,214 @@ left: 0;
     color: grey;
 }
 
-footer{
-    grid-area: ft;
+
+h1{
+    padding: 20px;
+    text-align: center;
+    font-size: 54px;
 }
 
-.footer {
-    background-color: white;
-    color: black;
-    padding: 40px 10%;
+.intro p{
+    text-align: center;
+    padding: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.banner{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
-.footer-logo {
-    width: 85%;
-    height: 90%;
-    border: 2px solid black;
-    border-radius: 10px;
+
+
+
+
+
+
+
+
+/* Algemene layoutregels */
+.layout {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    transition: background-color 1s ease-in-out;
 }
-.footer-section {
+
+/* Titel boven, dan beeld en tekst */
+.layout h3 {
+    margin-bottom: 1rem;
+}
+
+/* Afbeeldingen */
+.verderafbeeldingen img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Contentblokken */
+.layout > div {
     flex: 1;
-    min-width: 250px;
 }
-.footer-section h4 {
-    font-weight: bold;
-}
-.footer-contact {
-    list-style: none;
-    padding: 0;
-}
-.footer-contact li {
-    margin: 5px 0;
-}
-.footer-contact a {
-    color: black;
-    text-decoration: none;
-}
-.footer-contact a:hover {
-    text-decoration: underline;
-}
-.subscribe-form input {
-    padding: 8px;
-    width: 200px;
-    border: 1px solid black;
-}
-.subscribe-form button {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    cursor: pointer;
-}
-.subscribe-form button:hover {
-    background-color: grey;
-}
-.social-icons a {
-    margin-right: 10px;
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-}
-.footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
-}
-/**/
-.verderstuderen .button-89 {
-    --b: 3px;   /* border thickness */
-    --s: .45em; /* size of the corner */
-    --color: #000;
-    
-    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
-    color: var(--color);
-    --_p: var(--s);
-    background:
-        conic-gradient(from 90deg at var(--b) var(--b),#000 90deg,var(--color) 0)
-        var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-    transition: .3s linear, color 0s, background-color 0s;
-    outline: var(--b) solid #0000;
-    outline-offset: .6em;
-    font-size: 16px;
 
-    border: 0;
-    border-radius: 10px;
+/* Specifieke breedteverdeling: 2/3 beeld, 1/3 tekst */
+.layout:nth-child(even) .verderafbeeldingen {
+    order: 1;
+    flex: 2;
+}
+.layout:nth-child(even) [class$='-content'] {
+    order: 2;
+    flex: 1;
+}
+.layout:nth-child(odd) .verderafbeeldingen {
+    order: 2;
+    flex: 2;
+}
+.layout:nth-child(odd) [class$='-content'] {
+    order: 1;
+    flex: 1;
+}
 
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+/* Zwart-wit afwisseling per blok */
+.verderstuderen > div,
+.arbeidsmarkt > div {
+    animation: fadeInBackground 1s ease-in-out;
+}
+
+.verderstuderen > div:nth-child(odd),
+.arbeidsmarkt > div:nth-child(odd) {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.verderstuderen > div:nth-child(even),
+.arbeidsmarkt > div:nth-child(even) {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Zorg dat tekstbuttons ook zichtbaar blijven in zwart */
+.layout a {
+    color: inherit;
+}
+
+/* Fade effect */
+@keyframes fadeInBackground {
+    0% {
+        opacity: 0.2;
     }
-
-    .button-89:hover,
-    .button-89:focus-visible{
-    --_p: 0px;
-    outline-color: var(--color);
-    outline-offset: .05em;
+    100% {
+        opacity: 1;
     }
-
-    .button-89:active {
-    background: var(--color);
-    color: #000;
-    }
-.verderstuderen .button-89 a{
-    color: white;
-    text-decoration: none;
 }
 
-    /**/
-.arbeidsmarkt .button-89 {
-    --b: 3px;   /* border thickness */
-    --s: .45em; /* size of the corner */
-    --color: #fff;
-    
-    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
-    color: var(--color);
-    --_p: var(--s);
-    background:
-        conic-gradient(from 90deg at var(--b) var(--b),#fff 90deg,var(--color) 0)
-        var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-    transition: .3s linear, color 0s, background-color 0s;
-    outline: var(--b) solid #0000;
-    outline-offset: .6em;
-    font-size: 16px;
-
-    border: 0;
-    border-radius: 10px;
-
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+/* Responsiviteit */
+@media (max-width: 768px) {
+    .layout {
+        flex-direction: column;
     }
-
-    .button-89:hover,
-    .button-89:focus-visible{
-    --_p: 0px;
-    outline-color: var(--color);
-    outline-offset: .05em;
+    .layout > div {
+        flex: unset;
+        width: 100%;
     }
-
-    .button-89:active {
-    background: var(--color);
-    color: #000;
-    }
-
-.arbeidsmarkt .button-89 a{
-    color: black;
-    text-decoration: none;
 }
+
+.layout::before,
+.layout::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.layout::before {
+    top: -40px;
+    background: linear-gradient(to bottom, transparent, currentColor);
+}
+
+.layout::after {
+    bottom: -40px;
+    background: linear-gradient(to top, transparent, currentColor);
+}
+
+/* Zorg dat layout relatief is gepositioneerd */
+.layout {
+    position: relative;
+    overflow: hidden;
+}
+
+.button-89.swirl {
+    animation: swirlEffect 0.8s ease-in-out forwards;
+}
+
+@keyframes swirlEffect {
+    0% {
+        transform: scale(1) rotate(0deg);
+        filter: blur(0);
+    }
+    50% {
+        transform: scale(1.2) rotate(360deg);
+        filter: blur(2px);
+    }
+    100% {
+        transform: scale(0.8) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+
+[class$='-content'] {
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 3px solid #00ffff; /* Aqua kleurige rand */
+    background: linear-gradient(145deg, rgba(255,255,255,0.1), rgba(0,0,0,0.1));
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
+    position: relative;
+}
+
+[class$='-content']:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0,255,255,0.5);
+}
+
+
+/* ==== Zwart-wit afwisselende achtergrond vanaf Cybersecurity ==== */
+.verderstuderen > div:nth-child(odd),
+.arbeidsmarkt > div:nth-child(even) {
+  background-color: #000;
+  color: white;
+}
+
+.verderstuderen > div:nth-child(even),
+.arbeidsmarkt > div:nth-child(odd) {
+  background-color: #fff;
+  color: black;
+}
+
+/* ==== Fade tussen secties ==== */
+.verderstuderen > div,
+.arbeidsmarkt > div {
+  transition: background-color 1s ease, color 1s ease;
+}
+
+/* ==== Tekstblokken stijlen ==== */
+.cyber-content, .ai-content, .web-content, .software-content,
+.network-content, .app-content, .eerste-content, .tweede-content,
+.derde-content, .vierde-content, .vijfde-content, .zesde-content {
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #ccc;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+  backdrop-filter: blur(5px);
+  transition: all 0.5s ease;
+}
+
