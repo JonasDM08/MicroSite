@@ -314,9 +314,9 @@ h1{
 
  /* INFORMATIE: Footer sectie stijlen */
   .footer {
-    background: linear-gradient(to top, rgb(255, 255, 255) 0%, black 100%);
-    background-size: 150% ;
-    color: black;
+    background: linear-gradient(to top, black 100%,rgb(255, 255, 255) 30%);
+    background-size: 100%;
+    color: white;
     padding: 40px 10%;
     display: flex;
     justify-content: space-between;
@@ -324,8 +324,8 @@ h1{
     text-align: center;
 }
 .footer-logo {
-    width: 85%;
-    height: 90%;
+    width: 90%;
+    height: 70px;
     border: 2px solid black;
     border-radius: 10px;
 }
@@ -344,7 +344,7 @@ h1{
     margin: 5px 0;
 }
 .footer-contact a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 .footer-contact a:hover {
