@@ -2,7 +2,7 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: white;
     color: #333333;
     line-height: 1.6;
 }
@@ -132,12 +132,12 @@ th {
 
 img {
     float: right;
-    margin-top: 3rem;
-    border-radius: 8px 0px 8px 0px;
+    margin-top: 2rem;
+    border-radius: 10px;
 }
 
 a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 1.4rem;
     font-weight: 400;
@@ -159,8 +159,6 @@ a:hover {
     max-height: 450px;
 }
 
-
-
 .gif td {
     background-color: white;
 }
@@ -171,16 +169,16 @@ a:hover {
 
 
   
-  nav{
+nav{
     display: flex;
     justify-content: end;
     align-items: center;
-  }
+}
   
   
   
   div img{
-    margin-right: auto;
+    margin-right: 80px;
   }
   
   .menu {
@@ -212,6 +210,9 @@ a:hover {
   
   }
   
+  .menu a {
+    color: white;
+  }
   
   a:hover {
     color: orangered !important;
@@ -219,34 +220,52 @@ a:hover {
 
   .WatIsADB{
     height: 50vh;
-     width: 100%;
-    padding-bottom: 40px;
+    width: 100%;
+    padding-bottom: 30px;
     margin: none;
     padding-left:  60px;
-   background: linear-gradient(rgba(0, 0, 0, 1) 30%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(black 50%, white);
     color: white;
-    display: flex;
+    display: inline-flex;
   }
+
+  .WatIsADB p {
+    display: block;
+    max-width: 700px;
+  }
+
   .LeerlingenProfiel{
-     height: 50vh;
+     height: 75vh;
      width: 100%;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     margin: none;
-    padding-left:  60px;
-    background: linear-gradient(white,rgba(225, 225, 225, 1) 40%, rgba(0, 0, 0, 1) 100%);
+    padding-left:  45px;
+    background: linear-gradient(white 80%, black);
     color: black;
-    display: flex;
+    display: inline-flex;
   }
+
+  .LeerlingenProfielTitel, .LeerlingenProfielLijst {
+    height: 300px;
+    width: 500px;
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid black;
+    border-radius: 15px;
+  }
+
   .AanbiedingRichting{
-     height: 50vh;
+     height: 100vh;
      width: 100%;
     padding-bottom: 40px;
     margin: none;
     padding-left:  60px;
-   background: linear-gradient(rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 1) 100%);
+   background: linear-gradient(black 80%, white);
     color: white;
-    display: flex;
   }
- 
-   
-  
+
+  .AanbiedingRichting h2 {
+    background-color: black;
+    color: white;
+    margin-top: 0px;
+  }
