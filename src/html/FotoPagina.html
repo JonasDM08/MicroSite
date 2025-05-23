@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Foto's pagina</title>
-  <link rel="stylesheet" href="/src/css/FotoPagina.css">
+  <link rel="stylesheet" href="/src/css/FotoPagina.css" />
 </head>
 <body>
 
@@ -16,8 +16,8 @@
       <a href="FotoPagina.html">Fotos</a>
       <a href="Contact.html">Contact</a>
     </nav>
-    <script src="/src/scripts/AllPages.js"></script>
   </section>
+  
 
   <div class="banner">
     <div class="banner-text">
@@ -27,32 +27,32 @@
   </div>
 
   <div class="gradient">
-    <br><br><br><br>
+    <br /><br /><br /><br />
     <h2>Fotos van hoofdvakken</h2>
-    <br><br><br><br><br><br><br><br>
+    <br /><br /><br /><br /><br /><br /><br /><br />
   </div>
 
   <div class="box-row">
     <div class="grid-container">
-      <div class="box"><img src="/src/Afbeeldingen/ADB1_Nieuw.jpg" alt="Image 1"></div>
-      <div class="box"><img src="/src/Afbeeldingen/ADB2_Nieuw.jpg" alt="Image 2"></div>
-      <div class="box"><img src="/src/Afbeeldingen/ADB3_Nieuw.jpg" alt="Image 3"></div>
+      <div class="box"><img src="/src/Afbeeldingen/ADB1_Nieuw.jpg" alt="Image 1" onclick="openPopup(0)" /></div>
+     <div class="box"><img src="/src/Afbeeldingen/ADB2_Nieuw.jpg" alt="Image 2" onclick="openPopup(1)" /></div>
+     <div class="box"><img src="/src/Afbeeldingen/ADB3_Nieuw.jpg" alt="Image 3" onclick="openPopup(2)" /></div>
     </div>
   </div>
 
   <div class="box-row">
     <div class="grid-container">
-      <div class="box"><img src="/src/Afbeeldingen/ADB4_Nieuw.jpg" alt="Image 4"></div>
-      <div class="box"><img src="/src/Afbeeldingen/ADB5_Nieuw.jpg" alt="Image 5"></div>
-      <div class="box"><img src="/src/Afbeeldingen/ADB6_Nieuw.jpg" alt="Image 6"></div>
+      <div class="box"><img src="/src/Afbeeldingen/ADB4_Nieuw.jpg" alt="Image 4" onclick="openPopup(3)" /></div>
+      <div class="box"><img src="/src/Afbeeldingen/ADB5_Nieuw.jpg" alt="Image 5" onclick="openPopup(4)" /></div>
+      <div class="box"><img src="/src/Afbeeldingen/ADB6_Nieuw.jpg" alt="Image 6" onclick="openPopup(5)" /></div>
     </div>
   </div>
 
   <div class="box-row">
     <div class="grid-container">
-      <div class="box"><img src="/src/Afbeeldingen/ADB7_Nieuw.jpg" alt="Image 7"></div>
-      <div class="box"><img src="/src/Afbeeldingen/ADB8_Nieuw.jpg" alt="Image 8"></div>
-      <div class="box"><img src="/src/Afbeeldingen/ADB9_Nieuw.jpg" alt="Image 9"></div>
+      <div class="box"><img src="/src/Afbeeldingen/ADB7_Nieuw.jpg" alt="Image 7" onclick="openPopup(6)" /></div>
+      <div class="box"><img src="/src/Afbeeldingen/ADB8_Nieuw.jpg" alt="Image 8" onclick="openPopup(7)" /></div>
+      <div class="box"><img src="/src/Afbeeldingen/ADB9_Nieuw.jpg" alt="Image 9" onclick="openPopup(8)" /></div>
     </div>
   </div>
 
@@ -81,10 +81,66 @@
         </div>
       </div>
     </div>
+     
     <div class="footer-bottom">
       <p>&copy; 2025 5ADB – Programmeren | Fotosite</p>
     </div>
   </footer>
 
+  
+  <!-- Lightbox popup -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <span class="prev">&#10094;</span>
+    <img id="lightbox-img" src="">
+    <span class="next">&#10095;</span>
+  </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const images = Array.from(document.querySelectorAll('.box img'));
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const closeBtn = document.querySelector('.close');
+  const prevBtn = document.querySelector('.prev');
+  const nextBtn = document.querySelector('.next');
+  let currentIndex = 0;
+
+  console.log("Images found:", images.length);
+
+  lightbox.style.display = 'none';  // Verberg de lightbox in het begin
+
+  images.forEach((img, i) => {
+    img.style.cursor = "pointer";  // laat zien dat het klikbaar is
+    img.addEventListener('click', () => {
+      currentIndex = i;
+      lightboxImg.src = images[currentIndex].src;
+      lightbox.style.display = 'flex';
+    });
+  });
+
+  closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    lightboxImg.src = images[currentIndex].src;
+  });
+
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    lightboxImg.src = images[currentIndex].src;
+  });
+
+  // Klik buiten de afbeelding sluit de lightbox
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+    }
+  });
+});
+</script>
 </body>
 </html>
+
