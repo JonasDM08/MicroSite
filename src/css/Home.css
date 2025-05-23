@@ -334,9 +334,8 @@ a:hover{
      
   /* INFORMATIE: Footer sectie stijlen */
   .footer {
-    background: linear-gradient(to top, rgb(255, 255, 255) 0%, black 100%);
-    background-size: 150% ;
-    color: black;
+    background: linear-gradient(to bottom, black 30%, rgb(255, 255, 255) 100%);
+    color: white;
     padding: 40px 10%;
     display: flex;
     justify-content: space-between;
@@ -344,8 +343,8 @@ a:hover{
     text-align: center;
 }
 .footer-logo {
-    width: 85%;
-    height: 90%;
+    width: 90%;
+    height: 70px;
     border: 2px solid black;
     border-radius: 10px;
 }
@@ -364,27 +363,13 @@ a:hover{
     margin: 5px 0;
 }
 .footer-contact a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 .footer-contact a:hover {
     text-decoration: underline;
 }
-.subscribe-form input {
-    padding: 8px;
-    width: 200px;
-    border: 1px solid black;
-}
-.subscribe-form button {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    cursor: pointer;
-}
-.subscribe-form button:hover {
-    background-color: grey;
-}
+
 
 .footer-bottom {
     text-align: center;

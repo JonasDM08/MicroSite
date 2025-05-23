@@ -87,6 +87,7 @@
     </div>
   </footer>
 
+<<<<<<< HEAD
   <!-- Lightbox overlay -->
   <div id="lightbox" class="lightbox hidden">
     <span class="close">&times;</span>
@@ -96,5 +97,58 @@
   </div>
 
   
+=======
+  <!-- Lightbox popup -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <span class="prev">&#10094;</span>
+    <img id="lightbox-img" src="">
+    <span class="next">&#10095;</span>
+  </div>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const images = Array.from(document.querySelectorAll('.box img'));
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const closeBtn = document.querySelector('.close');
+  const prevBtn = document.querySelector('.prev');
+  const nextBtn = document.querySelector('.next');
+  let currentIndex = 0;
+
+  console.log("Images found:", images.length);
+
+  images.forEach((img, i) => {
+    img.style.cursor = "pointer";  // laat zien dat het klikbaar is
+    img.addEventListener('click', () => {
+      currentIndex = i;
+      lightboxImg.src = images[currentIndex].src;
+      lightbox.style.display = 'flex';
+    });
+  });
+
+  closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    lightboxImg.src = images[currentIndex].src;
+  });
+
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    lightboxImg.src = images[currentIndex].src;
+  });
+
+  // Klik buiten de afbeelding sluit de lightbox
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+    }
+  });
+});
+</script>
+>>>>>>> ac8550709e9f7afb08c47959d3061083ea9df3f9
 </body>
 </html>
+
