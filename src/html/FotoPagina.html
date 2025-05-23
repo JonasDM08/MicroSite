@@ -87,17 +87,7 @@
     </div>
   </footer>
 
-<<<<<<< HEAD
-  <!-- Lightbox overlay -->
-  <div id="lightbox" class="lightbox hidden">
-    <span class="close">&times;</span>
-    <img class="lightbox-img" src="" alt="Vergrote afbeelding" />
-    <span class="prev">&#10094;</span>
-    <span class="next">&#10095;</span>
-  </div>
-
   
-=======
   <!-- Lightbox popup -->
   <div id="lightbox" class="lightbox">
     <span class="close">&times;</span>
@@ -105,6 +95,7 @@
     <img id="lightbox-img" src="">
     <span class="next">&#10095;</span>
   </div>
+
 <script>
   document.addEventListener("DOMContentLoaded", () => {
   const images = Array.from(document.querySelectorAll('.box img'));
@@ -116,6 +107,8 @@
   let currentIndex = 0;
 
   console.log("Images found:", images.length);
+
+  lightbox.style.display = 'none';  // Verberg de lightbox in het begin
 
   images.forEach((img, i) => {
     img.style.cursor = "pointer";  // laat zien dat het klikbaar is
@@ -148,7 +141,6 @@
   });
 });
 </script>
->>>>>>> ac8550709e9f7afb08c47959d3061083ea9df3f9
 </body>
 </html>
 
