@@ -11,6 +11,9 @@ body {
 body a{
     color: white;
 }
+h2{
+    text-align: center;
+}
 button{
     min-width: 70%;
 }
