@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Foto Viewer</title>
+  <link rel="stylesheet" href="/src/css/FotoPagina.css">
+<body>
+  
+    <span class="close" onclick="window.close()">&times;</span>
+  <img id="popupImage" class="fullscreen-image" src="">
+  <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+  <a class="next" onclick="changeImage(1)">&#10095;</a>
+
+  <script>
+    const images = ["ADB1_Nieuw.jpg", "ADB2_Nieuw.jpg", "ADB3_Nieuw.jpg" , "ADB4_Nieuw.jpg","ADB5_Nieuw.jpg","ADB6_Nieuw.jpg","ADB7_Nieuw.jpg","ADB8_Nieuw.jpg","ADB9_Nieuw.jpg"];
+    const urlParams = new URLSearchParams(window.location.search);
+    let currentIndex = parseInt(urlParams.get('index')) || 0;
+
+    const imageElement = document.getElementById('popupImage');
+    imageElement.src = images[currentIndex];
+
+    function changeImage(direction) {
+      currentIndex = (currentIndex + direction + images.length) % images.length;
+      imageElement.src = images[currentIndex];
+    }
+  </script>
+
+</body>
+
+</html>
