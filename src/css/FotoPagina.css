@@ -182,13 +182,16 @@ a:hover {
 @media (min-width: 1600px) {
   .grid-container {
     grid-template-columns: repeat(3, 1fr); /* VASTE 3 kolommen */
-    max-width: 1600px;
-    gap: 30px; /* ruimte tussen boxen */
-    padding: 0 80px;
+    max-width: 1900px;
+    gap: 200px; /* ruimte tussen boxen */
+    padding: 80px;
+    justify-content: center;
+    
   }
 
   .box {
-    font-size: 1.4rem;
+  transform: translateX(5px); 
+
   }
 }
 
