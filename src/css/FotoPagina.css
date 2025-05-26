@@ -181,9 +181,9 @@ a:hover {
 
 @media (min-width: 1600px) {
   .grid-container {
-    grid-template-columns: repeat(3, 1fr); /* VASTE 3 kolommen */
+    grid-template-columns: repeat(3, 1fr); 
     max-width: 1900px;
-    gap: 200px; /* ruimte tussen boxen */
+    gap: 200px; 
     padding: 80px;
     justify-content: center;
     
@@ -197,10 +197,10 @@ a:hover {
 
 @media (min-width: 2000px) {
   .grid-container {
-    max-width: 2000px; /* iets breder op ultrawide */
+    max-width: 2000px; 
     padding: 0 100px;
-    grid-template-columns: repeat(3, 1fr); /* VASTE 3 kolommen */
-    gap: 300px; /* ruimte tussen boxen */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 300px; 
     padding: 0 100px;
   }
 
