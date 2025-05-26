@@ -198,4 +198,64 @@ footer {
     .image-container {
         min-width: auto;
     }
-} 
+}
+  .footer {
+    color: white;
+    padding: 40px 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: black;
+}
+.footer-logo {
+    width: 90%;
+    height: 70px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.footer-logo-2 {
+  width: 70px;
+  height: 70px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h4 {
+    font-weight: bold;
+}
+
+.footer-contact {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-contact li {
+    margin: 5px 0;
+}
+.footer-contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+footer
+{
+    background-color: black;
+}
