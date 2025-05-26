@@ -128,10 +128,13 @@ a:hover{
     min-width: 250px;
     border: 1px solid white;
     border-radius: 5px;
-    background-image: url("/src/afbeeldingen/GTI/School.jpg");
+    background-color: #000; 
+    background-image: url(/src/Afbeeldingen/GTI_School.jpg); 
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 300px;
+    height: auto;
+    max-height: 500x;
   }
 
   .GTI-Tekst p {
@@ -173,7 +176,8 @@ a:hover{
   }
 
   
-  /* ||INFORMATIE: Over Ons sectie stijlen|| */
+  
+  /* ||INFORMATIE: OverOns sectie stijlen|| */
 
   .OverOns {
     width: 100%;
@@ -201,6 +205,8 @@ a:hover{
     padding: 20px;
     border-radius: 5px;
     border: 1px solid #000;
+    height: auto;
+    max-height: 400x;
     
   }
   .OverOns-item2 {
@@ -212,6 +218,8 @@ a:hover{
     border-radius: 5px;
     border: 1px solid #000;
     background-image: url(/src/afbeeldingen/programmeren.beter.jpg); 
+    height: auto;
+    max-height: 400px;
     background-size: cover;  
     background-position: center; 
     background-repeat: no-repeat; 
@@ -226,7 +234,7 @@ a:hover{
   
   .OverOns-item p {
     font-size: 16px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
   
   .lees-meer-btn-OverOns {
@@ -284,6 +292,7 @@ a:hover{
     flex-wrap: wrap;
     gap: 20px;
     padding-top: 100px;
+    justify-content: center;
   }
   
   .carrière-item {
@@ -294,25 +303,28 @@ a:hover{
     border-radius: 5px;
     border: solid 1px white;
     padding: 20px;
+    height: auto;
+    max-height: 400x;
   }
 
 
   .carrière-item2 {
-    height: 300px;
     flex: 2;
     min-width: 250px;
     background: #f4f4f4;
     padding: 20px;
     border: solid 1px white;
     border-radius: 5px;
-    background-image: url(/src/afbeeldingen/foto2.png); 
+    background-image: url(/src/afbeeldingen/foto2.png);
+    height: auto;
+    max-height: 400px;
     background-size: cover;  
     background-position: center; 
     background-repeat: no-repeat; 
   }
 
   .TekstCarrière {
-
+    padding-bottom: 15px;
     color: #ffffff;
     
   }
@@ -365,17 +377,28 @@ a:hover{
     border: 2px solid black;
     border-radius: 10px;
 }
+
+.footer-logo-2 {
+  width: 70px;
+  height: 70px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
 .footer-section {
     flex: 1;
     min-width: 250px;
 }
+
 .footer-section h4 {
     font-weight: bold;
 }
+
 .footer-contact {
     list-style: none;
     padding: 0;
 }
+
 .footer-contact li {
     margin: 5px 0;
 }
@@ -383,6 +406,7 @@ a:hover{
     color: white;
     text-decoration: none;
 }
+
 .footer-contact a:hover {
     text-decoration: underline;
 }
