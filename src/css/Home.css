@@ -217,8 +217,9 @@ a:hover{
     padding: 20px , 20px, 20px, 0px;
     border-radius: 5px;
     border: 1px solid #000;
-    background-image: url(/src/afbeeldingen/programmeren.beter.jpg); 
-    height: auto;
+    background-image: url(/src/VerbeterdeFotos/Verbeterde_Foto.jpg); 
+    height: 510;
+    width: 310;
     max-height: 400px;
     background-size: cover;  
     background-position: center; 
@@ -431,3 +432,37 @@ a:hover{
     display: block;
     
 }
+
+@media (min-width: 1600px) {
+  .GTI-grid, .OverOns-grid, .carrière-grid {
+    max-width: 1800px;
+    margin: 0 auto;
+    gap: 40px; /* meer ruimte op desktop */
+  }
+
+  .GTI-item-text,
+  .OverOns-item,
+  .carrière-item {
+    flex: 1;
+  }
+
+  .GTI-item-afbeelding,
+  .OverOns-item2,
+  .carrière-item2 {
+    flex: 1.5;
+    min-height: 500px;
+    max-height: 600px;
+    min-width: 500px;
+    max-width: 700px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .GTI,
+  .OverOns,
+  .carrière {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+

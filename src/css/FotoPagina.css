@@ -44,7 +44,7 @@ body {
 }
 
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -82,7 +82,6 @@ div img {
 }
 
 .menu {
-  z-index: 1;
   display: grid;
   grid-template-columns: 1fr;
   background-color: transparent;
@@ -91,8 +90,9 @@ div img {
   position: fixed;
   width: 100%;
   height: 75px;
-  z-index: 1;
+  z-index: 9999; /* verhoogd z-index zodat header altijd bovenaan blijft */
 }
+
 
 .menu.scrolled {
   background-color: white;
@@ -190,7 +190,7 @@ a:hover {
   }
 
   .box {
-  transform: translateX(5px); 
+  transform: translateX(10px); 
 
   }
 }
@@ -353,6 +353,14 @@ footer {
       
     }
 
+    .Band4{
+      background-color: white;
+      height: 350px;
+      display: flex;
+      align-items: center;
+      align-content: center;
+    }
+
     .Schaduw1{
       height: 100px;
       background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(0, 0, 0));
@@ -361,4 +369,9 @@ footer {
     .Schaduw2{
       height: 100px;
       background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 255, 255));
+    }
+
+    .Schaduw3{
+      height: 80px;
+      background-color: linear-gradient(to bottom, rgb(255 , 255 , 255) , rgb(0 , 0 , 0));
     }
