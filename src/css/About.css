@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
@@ -24,12 +30,12 @@ header h1 {
     font-weight: 300;
 }
 
-.TabelSection, .Overzicht{
+/*.TabelSection,*/ .Overzicht{
     padding: 40px 20px;
     margin: 20px auto;
     max-width: 800px;
-    border-bottom: 1px solid #e0e0e0;
 }
+
 
 aside, .rechts {
     float: left;
@@ -83,6 +89,7 @@ li {
 }
 
 table {
+    
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
@@ -102,30 +109,30 @@ th {
 
 
 .Overzicht th, .Overzicht td {
-    background-color: black;
-    color: white;
-    border: 1px solid white;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
 }
 .Overzicht h2 {
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
     justify-content: center;
     text-align: center;
 }
 
 .Overzicht h3 {
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
 }
 
 .TabelSection th, .TabelSection td,  .TabelSection tr , .TabelSection h2{
-    background-color: white;
-    color: black;
-    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
 }
 .TabelSection h2 {
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: black;
     justify-content: center;
     text-align: center;
 }
@@ -137,11 +144,11 @@ img {
 }
 
 a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 1.4rem;
     font-weight: 400;
-    padding: 0.5rem 1rem;
+    margin: 10px;
     background: none;
     cursor: pointer;
     display: inline-block;
@@ -160,7 +167,13 @@ a:hover {
 }
 
 .gif td {
-    background-color: white;
+    background-color: black;
+}
+
+.gif{
+    width: 800px;
+
+
 }
 
 .onder{
@@ -223,7 +236,7 @@ nav{
     width: 100%;
     padding-bottom: 30px;
     margin: none;
-    padding-left:  60px;
+    
     background: linear-gradient(black 50%, white);
     color: white;
     display: inline-flex;
@@ -239,7 +252,6 @@ nav{
      width: 100%;
     padding-bottom: 30px;
     margin: none;
-    padding-left:  45px;
     background: linear-gradient(white 80%, black);
     color: black;
     display: inline-flex;
@@ -255,12 +267,12 @@ nav{
   }
 
   .AanbiedingRichting{
-     height: 100vh;
-     width: 100%;
+    height: 100vh;
+    width: 100%;
     padding-bottom: 40px;
-    margin: none;
-    padding-left:  60px;
-   background: linear-gradient(black 80%, white);
+    padding-left: 2%;
+    padding-right: 2%;
+    background: linear-gradient(black 80%, white);
     color: white;
   }
 
@@ -270,8 +282,35 @@ nav{
     margin-top: 0px;
   }
 
+  .AanbiedingRichting-Tekst {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 40%;
+    font-size: 0.9rem;
+    margin-bottom: 15%;
+  }
+
   .TableSection {
     background-color: black;
     width: 100%;
     height: 80vh;
+}
+
+.zwart {
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.white-to-black-fade {
+    background: linear-gradient(to bottom, white 40px, black);
+    height: 25vh;    
+    width: 100%;
+    z-index: 1;
 }
