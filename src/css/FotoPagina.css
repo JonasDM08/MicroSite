@@ -82,6 +82,7 @@ div img {
 }
 
 .menu {
+   z-index: 1;
   display: grid;
   grid-template-columns: 1fr;
   background-color: transparent;
@@ -90,8 +91,10 @@ div img {
   position: fixed;
   width: 100%;
   height: 75px;
-  z-index: 9999; /* verhoogd z-index zodat header altijd bovenaan blijft */
+  z-index: 1;
 }
+
+
 
 
 .menu.scrolled {
@@ -190,7 +193,7 @@ a:hover {
   }
 
   .box {
-  transform: translateX(10px); 
+  transform: translateX(300px); 
 
   }
 }
