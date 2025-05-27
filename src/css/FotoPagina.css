@@ -82,17 +82,17 @@ div img {
 }
 
 .menu {
-  z-index: 1;
   display: grid;
   grid-template-columns: 1fr;
   background-color: transparent;
   transition: background-color 0.5s ease-in;
   text-align: right;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 75px;
-  z-index: 1;
+  z-index: 9999; /* verhoogd z-index zodat header altijd bovenaan blijft */
 }
+
 
 .menu.scrolled {
   background-color: white;
