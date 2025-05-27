@@ -190,7 +190,7 @@ a:hover {
   }
 
   .box {
-  transform: translateX(5px); 
+  transform: translateX(10px); 
 
   }
 }
@@ -353,6 +353,14 @@ footer {
       
     }
 
+    .Band4{
+      background-color: white;
+      height: 350px;
+      display: flex;
+      align-items: center;
+      align-content: center;
+    }
+
     .Schaduw1{
       height: 100px;
       background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(0, 0, 0));
@@ -361,4 +369,9 @@ footer {
     .Schaduw2{
       height: 100px;
       background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 255, 255));
+    }
+
+    .Schaduw3{
+      height: 80px;
+      background-color: linear-gradient(to bottom, rgb(255 , 255 , 255) , rgb(0 , 0 , 0));
     }
