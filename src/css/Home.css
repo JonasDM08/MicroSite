@@ -99,30 +99,48 @@ a:hover{
   /* ||INFORMATIE: Container voor secties|| */
   
 
-  .container-GTI{
+  .GTI {
     width: 100%;
-    height: 600px;
-    padding-bottom: 30px;
-    padding-top: 20px;
-    padding-left:  60px;
+    height: 700px;
+    padding: 60px;
     background-color: #000;
     color: white;
   }
-
-  .GTI-Tekst{
+  
+  .GTI-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 100px;
+  }
+  
+  .GTI-item-text {
     flex: 1;
     background-color: black;
     border-radius: 5px;
-    width: 45%;
     border: 1px solid white;
-    padding-left: 20px;  
-    margin-top: 100px;
-    
+    padding: 20px;
+    min-width: 250px;
+  }
+  
+  .GTI-item-afbeelding {
+    flex: 2;
+    min-width: 250px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #000; 
+    background-image: url(/src/Afbeeldingen/GTI_School.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    max-height: 500x;
   }
 
   .GTI-Tekst p {
     margin-top: 20px;
     margin-left: 0px;
+    max-width: 40%;
   }
   
   .lees-meer-btn-GTI {
@@ -132,6 +150,7 @@ a:hover{
     color: #fcfcfc;                     
     border: 1px solid #fcfcfc;
     padding: 8px 12px;
+    margin-bottom: 20px;
     font-family: Arial, sans-serif;  
     transition:transform 1s; 
   }
@@ -148,7 +167,7 @@ a:hover{
   
   .lees-meer-btn-GTI:hover {
     background: white;  
-    color: black;      
+    color: black !important;      
     border-radius: 0%;
     transform: scale(110%);
   }
@@ -157,7 +176,8 @@ a:hover{
   }
 
   
-  /* ||INFORMATIE: Over Ons sectie stijlen|| */
+  
+  /* ||INFORMATIE: OverOns sectie stijlen|| */
 
   .OverOns {
     width: 100%;
@@ -185,6 +205,8 @@ a:hover{
     padding: 20px;
     border-radius: 5px;
     border: 1px solid #000;
+    height: auto;
+    max-height: 400x;
     
   }
   .OverOns-item2 {
@@ -192,10 +214,13 @@ a:hover{
     flex: 2;
     min-width: 250px;
     background: #f4f4f4;
-    padding: 20px;
+    padding: 20px , 20px, 20px, 0px;
     border-radius: 5px;
     border: 1px solid #000;
-    background-image: url(/src/afbeeldingen/programmeren.beter.jpg); 
+    background-image: url(/src/VerbeterdeFotos/Verbeterde_Foto.jpg); 
+    height: 510;
+    width: 310;
+    max-height: 400px;
     background-size: cover;  
     background-position: center; 
     background-repeat: no-repeat; 
@@ -210,6 +235,7 @@ a:hover{
   
   .OverOns-item p {
     font-size: 16px;
+    padding-bottom: 20px;
   }
   
   .lees-meer-btn-OverOns {
@@ -224,7 +250,7 @@ a:hover{
   }
   .lees-meer-btn-OverOns:hover {
     background: rgb(18, 17, 17);  
-    color: #ffffff;      
+    color: #ffffff !important;      
     transform: scale(110%);
   }
 
@@ -267,6 +293,7 @@ a:hover{
     flex-wrap: wrap;
     gap: 20px;
     padding-top: 100px;
+    justify-content: center;
   }
   
   .carrière-item {
@@ -277,25 +304,28 @@ a:hover{
     border-radius: 5px;
     border: solid 1px white;
     padding: 20px;
+    height: auto;
+    max-height: 400x;
   }
 
 
   .carrière-item2 {
-    height: 300px;
     flex: 2;
     min-width: 250px;
     background: #f4f4f4;
     padding: 20px;
     border: solid 1px white;
     border-radius: 5px;
-    background-image: url(/src/afbeeldingen/foto2.png); 
+    background-image: url(/src/afbeeldingen/foto2.png);
+    height: auto;
+    max-height: 400px;
     background-size: cover;  
     background-position: center; 
     background-repeat: no-repeat; 
   }
 
   .TekstCarrière {
-
+    padding-bottom: 15px;
     color: #ffffff;
     
   }
@@ -323,7 +353,7 @@ a:hover{
   
   .lees-meer-btn-Carrière:hover {
     background: white;  
-    color: black;
+    color: black !important;
     transform: scale(110%);      
     
   }
@@ -348,17 +378,28 @@ a:hover{
     border: 2px solid black;
     border-radius: 10px;
 }
+
+.footer-logo-2 {
+  width: 70px;
+  height: 70px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
 .footer-section {
     flex: 1;
     min-width: 250px;
 }
+
 .footer-section h4 {
     font-weight: bold;
 }
+
 .footer-contact {
     list-style: none;
     padding: 0;
 }
+
 .footer-contact li {
     margin: 5px 0;
 }
@@ -366,6 +407,7 @@ a:hover{
     color: white;
     text-decoration: none;
 }
+
 .footer-contact a:hover {
     text-decoration: underline;
 }
@@ -390,3 +432,37 @@ a:hover{
     display: block;
     
 }
+
+@media (min-width: 1600px) {
+  .GTI-grid, .OverOns-grid, .carrière-grid {
+    max-width: 1800px;
+    margin: 0 auto;
+    gap: 40px; /* meer ruimte op desktop */
+  }
+
+  .GTI-item-text,
+  .OverOns-item,
+  .carrière-item {
+    flex: 1;
+  }
+
+  .GTI-item-afbeelding,
+  .OverOns-item2,
+  .carrière-item2 {
+    flex: 1.5;
+    min-height: 500px;
+    max-height: 600px;
+    min-width: 500px;
+    max-width: 700px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .GTI,
+  .OverOns,
+  .carrière {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+

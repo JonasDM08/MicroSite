@@ -17,6 +17,33 @@ h2{
 button{
     min-width: 70%;
 }
+.title-bar {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 60px 20px 20px; /* top padding gives space under the menu */
+    position: relative;
+    z-index: 0;
+    padding-top: 75px; /* matches the height of the fixed menu */
+}
+@keyframes floatIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.title-bar h2 {
+    margin: 0;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 button:hover{
     background-color: #212121;
     color: rgb(255, 255, 255);
@@ -39,6 +66,12 @@ button:hover{
 .container{
     margin: 120px auto;
     width: 90%;
+    margin-top: 20px;
+
+    opacity: 0;
+    transform: translateY(50px);
+    animation: floatIn 1s ease-out forwards;
+    animation-delay: 0.3s;
 }
 .fade {
   position: absolute;
@@ -202,7 +235,7 @@ input{
     padding: 40px;
     border-radius: 12px;
     max-width: 800px;
-    margin: 0 auto;
+    margin-bottom: auto;
     color: white;
     box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
