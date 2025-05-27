@@ -227,9 +227,6 @@ form textarea {
 html {
   scroll-behavior: smooth;
 }
-input{
-
-}
 .container {
     background-color: rgba(0, 0, 0, 0.5); /* semi-transparent dark overlay */
     padding: 40px;
