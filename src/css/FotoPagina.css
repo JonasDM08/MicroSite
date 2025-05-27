@@ -212,68 +212,85 @@ a:hover {
   }
 }
 
-footer {
-  background-color: #111;
-  color: white;
-  padding: 40px 20px 20px 20px;
-  font-size: 14px;
-  margin-top: 60px;
+h1{
+    padding: 20px;
+    text-align: center;
+    font-size: 54px;
+}
+.intro p{
+    text-align: center;
+    padding: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
-.footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 40px;
+
+ .footer {
+    background: linear-gradient(to top, rgb(255, 255, 255) 100%,rgb(0, 0, 0) 30%);
+    background-size: 100%;
+    color: rgb(0, 0, 0);
+    padding: 40px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
+.footer-logo-1 {
+    width: 90%;
+    height: 70px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.footer-logo-2 {
+    width: 70px;
+    height: 70px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.footer-contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    flex: 1;
+}
+
 
 .footer-section {
-  max-width: 300px;
+    flex: 1;
+    min-width: 250px;
 }
-
-.footer-section h3,
 .footer-section h4 {
-  margin-bottom: 10px;
-  color: #3498db;
+    font-weight: bold;
 }
-
 .footer-contact {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
 }
-
 .footer-contact li {
-  margin-bottom: 6px;
+    margin: 5px 0;
 }
-
 .footer-contact a {
-  color: #ccc;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
-
 .footer-contact a:hover {
-  color: #fff;
+    text-decoration: underline;
 }
-
 .social-icons a {
-  font-size: 20px;
-  margin-right: 10px;
-  color: #ccc;
-  text-decoration: none;
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
 }
-
-.social-icons a:hover {
-  color: #fff;
-}
-
 .footer-bottom {
-  text-align: center;
-  margin-top: 20px;
-  border-top: 1px solid #333;
-  padding-top: 10px;
-  color: #777;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
 }
+
+
 
  /* Lightbox CSS */
 .lightbox {
