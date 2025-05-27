@@ -167,7 +167,7 @@ a:hover{
   
   .lees-meer-btn-GTI:hover {
     background: white;  
-    color: black;      
+    color: black !important;      
     border-radius: 0%;
     transform: scale(110%);
   }
@@ -250,7 +250,7 @@ a:hover{
   }
   .lees-meer-btn-OverOns:hover {
     background: rgb(18, 17, 17);  
-    color: #ffffff;      
+    color: #ffffff !important;      
     transform: scale(110%);
   }
 
@@ -353,7 +353,7 @@ a:hover{
   
   .lees-meer-btn-Carrière:hover {
     background: white;  
-    color: black;
+    color: black !important;
     transform: scale(110%);      
     
   }
