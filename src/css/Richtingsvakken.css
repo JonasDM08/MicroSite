@@ -21,7 +21,6 @@ main {
     background-color: linear-gradient(to bottom, #000000, #ffffff);
 }
 
-
 h1 {
     color: #ffffff;
     text-align: center;
@@ -80,6 +79,7 @@ div img{
   width: 100%;
   height: 75px;
   z-index: 1;
+  left: 0%;
 }
 
 .menu.scrolled{
