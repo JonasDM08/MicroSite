@@ -395,3 +395,99 @@ h1{
       height: 80px;
       background-color: linear-gradient(to bottom, rgb(255 , 255 , 255) , rgb(0 , 0 , 0));
     }
+
+/* 📱 Mobiel (max-width 600px) */
+@media (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0 16px;
+  }
+
+  .box {
+    font-size: 0.9rem;
+    padding: 10px;
+    aspect-ratio: auto;
+    height: auto;
+  }
+
+  .box img {
+    border-radius: 12px;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+  }
+}
+
+/* 📱 Mobiel (max-width 600px) */
+@media (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0 16px;
+  }
+
+  .box {
+    font-size: 0.9rem;
+    padding: 10px;
+    aspect-ratio: auto;
+    height: auto;
+  }
+
+  .box img {
+    border-radius: 12px;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+  }
+}
+
+/* 📲 Tablet (601px – 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 32px;
+  }
+
+  .box {
+    font-size: 1rem;
+    padding: 12px;
+    aspect-ratio: auto;
+    height: auto;
+  }
+
+  .box img {
+    border-radius: 12px;
+    max-height: 400px;
+    object-fit: cover;
+  }
+}
+
+
+@media (min-width: 100px) and (max-width: 500px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 32px;
+  }
+
+  .box {
+    font-size: 0.5rem;
+    padding: 12px;
+    aspect-ratio: auto;
+    height: auto;
+  }
+
+  .box img {
+    border-radius: 12px;
+    max-height: 400px;
+    object-fit: cover;
+  }
+}
+
+
