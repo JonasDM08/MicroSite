@@ -157,7 +157,7 @@ a:hover {
 /* === OverOns === */
 .OverOns {
   width: 100%;
-  padding: 100px 60px 60px 60px;
+  padding: 60px 60px 130px 60px;
   background: linear-gradient(to bottom, black 0%, white 20%, white 80%, black 100%);
 }
 
@@ -341,7 +341,7 @@ a:hover {
   }
 }
 
-/* ✅ Kleine schermen: Mobiel / Tablet */
+/*  Kleine schermen: Mobiel / Tablet */
 @media (max-width: 768px) {
   .GTI-grid,
   .OverOns-grid,
