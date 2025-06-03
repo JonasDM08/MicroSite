@@ -449,7 +449,7 @@ h1{
 
 
 /* Responsiviteit */
-@media (min-width: 576px){
+@media (min-width:481px) and (max-width: 576px){
     body {
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
@@ -460,6 +460,7 @@ h1{
     }
 
     header {
+        padding-top: 150px;
         height: 250px;
     }
 
@@ -479,16 +480,32 @@ h1{
 }
 
 @media (min-width: 768px) {
-    .layout {
-        flex-flow: row wrap;
-        align-items: center;
+    body {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "hd hd hd"
+        "mn mn mn"
+        "gd gd gd"
+        "ft ft ft";
     }
-
-    .layout > div {
-        flex: unset;
-        width: 100%;
+    header {
+        padding-top: 150px;
+        height: 250px;
+    }
+    main {
+        padding-top: 5%;
+    }
+    footer {
+        padding: 20px;
+    }
+    .layout {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
     }
 }
+
+
 @media (min-width: 992px) {
     body {
         grid-template-columns: repeat(3, 1fr);
@@ -509,5 +526,28 @@ h1{
 
     footer {
         padding: 20px;
+    }
+
+    /* Specifieke breedteverdeling: 2/3 beeld, 1/3 tekst */
+    /* Standaard: foto links, content rechts */
+    .layout {
+        flex-flow: row wrap;
+    }
+    .layout .verderafbeeldingen {
+        flex: 2 1 0;
+    }
+    .layout [class$='-content'] {
+        flex: 1 1 0;
+    }
+
+    /* Wissel om: als .reverse op .layout staat, foto rechts, content links */
+    .layout.reverse {
+        flex-direction: row wrap;
+    }
+    .layout.reverse .verderafbeeldingen {
+        flex: 0 1 2;
+    }
+    .layout.reverse [class$='-content'] {
+        flex: 0 1 1;
     }
 }
