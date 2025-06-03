@@ -338,6 +338,9 @@ nav{
     max-width: 80%;
     height: 80vh;
 }
+.TabelSection h2{
+  width: 65.3%;
+}
 .TabelSectionInhoud{
   width: 100%;
   display: flex;
