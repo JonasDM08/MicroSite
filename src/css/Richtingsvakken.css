@@ -9,16 +9,16 @@ body {
     font-family: 'Raleway', sans-serif;
     line-height: 1.6;
     color: #ffffff;
-    background-color: #000000;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* Main content */
 main {
     padding-top: 95px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: linear-gradient(to bottom, #000000, #ffffff);
+    background-color:rgba(255, 255, 255, 0);
+    width: 100%;
 }
 
 h1 {
@@ -44,6 +44,8 @@ section {
     box-shadow: 0 2px 4px rgba(255,255,255,0.1);
     display: flex;
     gap: 2rem;
+    width: 50%;
+
 }
 
 a {
@@ -258,5 +260,195 @@ footer {
 
 footer
 {
+
     background-color: black;
+    margin-top: 75px;
+}
+
+section .content{
+    background-color: #ffffff00;
+    
+}
+
+html
+{
+    scroll-behavior: smooth;
+    /*background-image: linear-gradient(to bottom, #000000 1%, #ffffff 7.5%, #000000 19.5%, #ffffff 36.5%, #000000 55%, #ffffff 71.5%, #000000 85%);
+*/
+    }
+.Title
+{
+    justify-content: center;
+    text-align: center;
+    margin-left: 25%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h1
+{
+    margin: 0;
+}
+.content
+{
+    margin-left: 25%;
+    margin-bottom: 0;
+}
+.zwartwit
+{
+    height: 150px;
+    width: 100%;
+    background: linear-gradient(to bottom, white, black);
+    z-index: 1;
+}
+
+ .witzwart
+{
+    height: 150px;
+    width: 100%;
+    background: linear-gradient(to bottom, black, white);
+    z-index: 1;
+}
+
+div .wit
+{
+    background-color: white;
+}
+div .zwart
+{
+    background-color: black;
+}
+
+footer
+{
+    margin-top: 0;
+}
+
+nav 
+{
+    background-color: black;
+}
+
+.wit
+{
+    background-color: white;
+}
+.zwart
+{
+    background-color: black;
+}
+.richting
+{
+    height: 120px;
+}
+main
+{
+    background-color: black;
+}
+
+.colorreverse, h1
+{
+    background-color: white;
+    color: black;
+    border-color: black;
+    box-shadow: none;
+}
+
+/* Smartphones (portrait & landscape) */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  section.content {
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text-content {
+    max-height: none;
+    padding: 0;
+    border: none;
+  }
+
+  .image-container {
+    min-width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* Tablets (portrait & landscape) */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  section.content {
+    flex-direction: column;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text-content {
+    max-height: none;
+    padding: 0;
+    border: none;
+  }
+
+  .image-container {
+    min-width: 100%;
+  }
+
+  nav {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Desktops / Large Screens */
+@media screen and (min-width: 1025px) {
+  body {
+    font-size: 18px;
+  }
+
+  section.content {
+    flex-direction: row;
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .text-content {
+    max-height: 400px;
+    padding-right: 1rem;
+    border-right: 1px solid #333;
+  }
+
+  .image-container {
+    min-width: 300px;
+  }
+
+  nav {
+    justify-content: flex-end;
+  }
+
+  .footer {
+    flex-direction: row;
+  }
 }
