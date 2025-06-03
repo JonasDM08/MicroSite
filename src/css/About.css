@@ -314,8 +314,13 @@ nav{
     width: 100%;
     z-index: 1;
 }
+
+.ButtonKolom{
+  
+}
+
 .LeesMeer{
-     display: inline-flex;
+  display: inline-flex;
   align-items: center;
   color: #fcfcfc;
   border: 1px solid #fcfcfc;
@@ -323,10 +328,12 @@ nav{
   margin-bottom: 20px;
   font-family: Arial, sans-serif;
   transition: transform 1s;
+  width: 146px;
+  height: 45.5px;
 }
 .LeesMeer:hover {
-  background: black;
-  color: orangered !important;
+  background: white;
+  color: black !important;
   transform: scale(110%);
 }
 .LeesMeer .btn-text {
