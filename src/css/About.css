@@ -90,7 +90,7 @@ li {
 
 table {
     
-    width: 100%;
+    max-width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
     background-color: white;
@@ -293,10 +293,15 @@ nav{
 
   .TableSection {
     background-color: black;
-    width: 100%;
+    max-width: 80%;
     height: 80vh;
 }
-
+.TabelSectionInhoud{
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
 .zwart {
     display: flex;
     background-color: black;
@@ -315,9 +320,7 @@ nav{
     z-index: 1;
 }
 
-.ButtonKolom{
-  
-}
+
 
 .LeesMeer{
   display: inline-flex;
@@ -342,4 +345,12 @@ nav{
 
 .LeesMeer .btn-arrow {
   padding-left: 8px;
+}
+
+
+@media (max-width: 426px) {
+  .MobileVerdwijn{
+    display: none;
+  }
+  
 }
