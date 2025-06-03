@@ -21,16 +21,13 @@
             <h1>Applicatie en Databeheer (ADB) bij GTI Beveren</h1>
         </header>
         <div class="WatIsADB">
-            <p>ADB staat voor <strong>Applicatie en Databeheer</strong>. Dit vakgebied richt zich op het beheren, optimaliseren en beveiligen van softwaretoepassingen en databanken binnen organisaties.</p>
-            <img src="/src/afbeeldingen/foto.programmeren.png" alt="Computer">
+            <p>ADB staat voor <strong>Applicatie en Databeheer</strong>. Dit vakgebied richt zich op het beheren, optimaliseren en beveiligen van softwaretoepassingen en databanken binnen organisaties.</p>            
         </div>
         
             <div class="LeerlingenProfiel">
-                <div class="LeerlingenProfielTitel">
+                <div class="LeerlingenProfielTekst">
                     <h2>Leerlingenprofiel</h2>
                     <p>Leerlingen die deze studierichting willen volgen:</p>
-                </div>
-                <div class="LeerlingenProfielLijst">
                     <ul>
                         <li>laten zich ondedompelen in de wereld van informatica</li>
                         <li>ontwikkelen eigen programma's</li>
@@ -40,12 +37,29 @@
                         <li>kunnen tijdens het 6de jaar, bijgestaan door een leerkracht-coach, vormgeven aan STEM-eindproject</li>
                     </ul>
                 </div>
+                <div class="LeerlingenProfielFoto">
+                    <img src="/src/afbeeldingen/foto.programmeren.png" alt="Computer">
+                </div>
             </div>
        
         
         
             <div class="AanbiedingRichting">
-                <div class="AanbiedingRichting-Tekst">
+                <div class="AanbiedingRichtingFotos">
+                    <div class="AanbiedingRichtingFoto1">
+                        <!--Hier dus 1 foto-->
+                    </div>
+                    <div class="AanbiedingRichtingFoto2">
+                        <!--Hier dus 1 foto-->
+                    </div>
+                    <div class="AanbiedingRichtingFoto3">
+                        <!--Hier dus 1 foto-->
+                    </div>
+                    <div class="AanbiedingRichtingFoto4">
+                        <!--Hier dus 1 foto-->
+                    </div>
+                </div>
+                <div class="AanbiedingRichtingTekst">
                     <h2>Wat biedt deze richting?</h2>
                     <p>
                         Deze studierichting is een gerichte technische opleiding waarin de wereld van informatica voor je opengaat:
@@ -60,13 +74,13 @@
                         <li>een netwerk begrijpen, uittekenen, configureren en beveiligen</li>
                         <li>het gebruiken van specifieke kantoorsoftware</li>
                     </ul>
-                </article>
+                </div>
             </div>
        
         
         
         <section class="Overzicht">
-            <h2>Overzicht van de lessen</h2>
+            <h2>Algemeen overzicht</h2>
             <table>
                 <tr>
                     <th>Vakgebied</th>
@@ -162,20 +176,20 @@
         <div class="white-to-black-fade"></div>
         <section class="TabelSection zwart">
             <div class="TabelSectionInhoud">
-            <h2>Overzicht van de speciefieke vakken</h2>
+            <h2>Overzicht specifieke vakken</h2>
             <table class="gif">
                 <tr>
                     <th>Vak</th>
                     <th>Aantal uren</th>
-                    <th>Beschrijving</th>
+                    <th class="MobileVerdwijn">Beschrijving</th>
                     <th></th>
                 </tr>
                 <tr>
                     <td><a href="/src/html/Richtingsvakken.html">Programmeren</a></td>
                     <td>8 uur</td>
-                    <td>Ontwikkelen en testen van zelfgeschreven programma's.
+                    <td class="MobileVerdwijn">Ontwikkelen en testen van zelfgeschreven programma's.
                          Hier leer je programmeren in c# met console en forms en het beware in databanken.</td>
-                    <td><a href="/src/html/Richtingsvakken.html" class="LeesMeer">
+                    <td class="ButtonKolom"><a href="/src/html/Richtingsvakken.html" class="LeesMeer">
                     <span class="btn-text">Meer lezen</span>
                     <span class="btn-arrow">→</span>
                     </a></td>
@@ -183,9 +197,9 @@
                 <tr>
                     <td><a href="/src/html/Richtingsvakken.html">Applicatiebeheer</a></td>
                     <td>2 uur</td>
-                    <td>Werken met applicaties van Microsoft. 
+                    <td class="MobileVerdwijn">Werken met applicaties van Microsoft. 
                         Hier leer je over gevorderde gebruik van softwares en websites zoals: Canva, Word, Excel, Microsoft 365…</td>
-                    <td><a href="/src/html/Richtingsvakken.html" class="LeesMeer">
+                    <td class="ButtonKolom"><a href="/src/html/Richtingsvakken.html" class="LeesMeer">
                     <span class="btn-text">Meer lezen</span>
                     <span class="btn-arrow">→</span>
                     </a></td>
@@ -193,9 +207,9 @@
                 <tr>
                     <td><a href="/src/html/Richtingsvakken.html">Computersystemen</a></td>
                     <td>4 uur</td>
-                    <td>De hardware van computers leren en onderzoeken. 
+                    <td class="MobileVerdwijn">De hardware van computers leren en onderzoeken. 
                         Hier leer je de werkingen van computer en de onderdelen er in, servers met andere operatie systemen , randapparatuur en wat geschiedenis over de PC.</td>
-                     <td><a href="/src/html/Richtingsvakken.html" class="LeesMeer">
+                     <td class="ButtonKolom"><a href="/src/html/Richtingsvakken.html" class="LeesMeer">
                     <span class="btn-text">Meer lezen</span>
                     <span class="btn-arrow">→</span>
                     </a></td>
@@ -203,8 +217,8 @@
                 <tr>
                     <td><a href="/src/html/Richtingsvakken.html">Webdesign</a></td>
                     <td>4 uur</td>
-                    <td>Websites maken met behulp van html, css en scripts. Hier leer je het maken van websites in Visual studio code en de opmaak en het bewaren van data.</td>
-                     <td><a href="/src/html/Richtingsvakken.html" class="LeesMeer">
+                    <td class="MobileVerdwijn">Websites maken met behulp van html, css en scripts. Hier leer je het maken van websites in Visual studio code en de opmaak en het bewaren van data.</td>
+                    <td class="ButtonKolom"><a href="/src/html/Richtingsvakken.html" class="LeesMeer">
                     <span class="btn-text">Meer lezen</span>
                     <span class="btn-arrow">→</span>
                     </a></td>

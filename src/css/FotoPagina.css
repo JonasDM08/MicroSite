@@ -53,8 +53,9 @@ header {
 }
 
 header h1 {
-  margin: 0;
-  font-size: 24px;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 300;
 }
 
 h2 {
@@ -91,11 +92,8 @@ div img {
   position: fixed;
   width: 100%;
   height: 75px;
-  z-index: 1;
+  z-index: 4;
 }
-
-
-
 
 .menu.scrolled {
   background-color: white;
@@ -469,6 +467,28 @@ h1{
 
 
 @media (min-width: 100px) and (max-width: 500px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 32px;
+  }
+
+  .box {
+    font-size: 1.5rem;
+    padding: 12px;
+    aspect-ratio: auto;
+    height: auto;
+  }
+
+  .box img {
+    border-radius: 12px;
+    max-height: 400px;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 50px) and (max-width: 200px) {
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;

@@ -143,7 +143,9 @@ a:hover {
   margin-right: 8px;
 }
 
-.lees-meer-btn-GTI .btn-arrow {
+.lees-meer-btn-GTI .btn-arrow,
+.lees-meer-btn-Carrière .btn-arrow, 
+.lees-meer-btn-OverOns .btn-arrow {
   padding-left: 8px;
 }
 
@@ -157,7 +159,7 @@ a:hover {
 /* === OverOns === */
 .OverOns {
   width: 100%;
-  padding: 100px 60px 60px 60px;
+  padding: 60px 60px 130px 60px;
   background: linear-gradient(to bottom, black 0%, white 20%, white 80%, black 100%);
 }
 
@@ -339,9 +341,14 @@ a:hover {
     padding-left: 100px;
     padding-right: 100px;
   }
+
+  .OverOns-grid {
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
 }
 
-/* ✅ Kleine schermen: Mobiel / Tablet */
+/*  Kleine schermen: Mobiel / Tablet */
 @media (max-width: 768px) {
   .GTI-grid,
   .OverOns-grid,
