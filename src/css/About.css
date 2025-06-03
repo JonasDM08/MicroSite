@@ -26,7 +26,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-weight: 300;
 }
 
@@ -355,4 +355,33 @@ nav{
     height: 25vh;    
     width: 100%;
     z-index: 1;
+}
+
+.ButtonKolom{
+  
+}
+
+.LeesMeer{
+  display: inline-flex;
+  align-items: center;
+  color: #fcfcfc;
+  border: 1px solid #fcfcfc;
+  padding: 8px 12px;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  transition: transform 1s;
+  width: 146px;
+  height: 45.5px;
+}
+.LeesMeer:hover {
+  background: white;
+  color: black !important;
+  transform: scale(110%);
+}
+.LeesMeer .btn-text {
+  margin-right: 8px;
+}
+
+.LeesMeer .btn-arrow {
+  padding-left: 8px;
 }
