@@ -681,42 +681,5 @@ h1{
     padding-top:200px;
   }
 }
-/* Afbeeldingen */
-.verderafbeeldingen img {
-    width: 100%;
-    height: 500px;
-    border-radius: 1rem;
-}
 
-/* Contentblokken */
-
-.layout > div {
-    flex: 1;
-}
-
-/* Standaard: content links (1/3), afbeelding rechts (2/3) */
-.layout{
-    flex-direction: row;
-}
-.layout .verderafbeeldingen {
-    order: 2;
-    flex: 2 1 0;
-}
-.layout [class$='-content'] {
-    order: 1;
-    flex: 1 1 0;
-}
-
-/* Reverse: content rechts (1/3), afbeelding links (2/3) */
-.layout.reverse {
-    flex-direction: row;
-}
-.layout.reverse .verderafbeeldingen {
-    order: 1;
-    flex: 2 1 0;
-}
-.layout.reverse [class$='-content'] {
-    order: 2;
-    flex: 1 1 0;
-}
 
