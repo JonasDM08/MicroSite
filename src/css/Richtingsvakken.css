@@ -140,10 +140,10 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 300px;
+  min-width: 400px;
   padding: 0;
   max-width: 420px;
-  height: 400px;
+  height: 404px;
 }
 
 .content-image {
@@ -156,7 +156,9 @@ li {
 
 .content-image .image-container
 {
-  flex: 1;
+  flex :none;
+  width: 400px;
+  height: 4px;
 }
 
 /* Footer */
@@ -352,12 +354,33 @@ footer
 
 .wit
 {
-    background-color: white;
+  background-color: white;
+  color: black;
 }
 .zwart
 {
-    background-color: black;
+  background-color: black;
+  color: white;
 }
+
+.wborder
+{
+    border: 3px solid white;
+    border-radius: 1rem;
+    box-shadow: none;
+    background-color: black;
+    color: white;
+}
+.zborder
+{
+    border: 3px solid black;
+    border-radius: 1rem;
+    box-shadow: none;
+    background-color: white;
+    color: black;
+}
+
+
 .richting
 {
     height: 120px;
@@ -399,7 +422,7 @@ main
 
   section.content {
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
