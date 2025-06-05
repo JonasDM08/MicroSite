@@ -641,9 +641,7 @@ h1{
     text-align: left;
 }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
     /* Wissel om: als .reverse op .layout staat, foto rechts, content links */
     .layout.reverse {
         flex-direction: row wrap;
@@ -685,11 +683,6 @@ h1{
     display: flex;
   }
 }
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 /* Afbeeldingen */
 .verderafbeeldingen img {
     width: 100%;
@@ -728,11 +721,4 @@ h1{
     order: 2;
     flex: 1 1 0;
 }
-}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
