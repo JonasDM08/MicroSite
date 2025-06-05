@@ -97,7 +97,7 @@ div img{
   text-align: center;
   font-size: 3rem;
   transition: right 0.3s ease;
-  z-index:1;
+  z-index:7;
 }
 
 .OffScreenMenu.active{
