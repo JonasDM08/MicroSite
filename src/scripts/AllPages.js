@@ -35,3 +35,14 @@ window.addEventListener('scroll', function() {
         }, 300);
     }
 });
+
+//hamburger Menu Code
+document.addEventListener('DOMContentLoaded', () => {
+    const hamMenu = document.querySelector('.HambMenu');
+    const OffScreenMenu = document.querySelector('.OffScreenMenu');
+
+    hamMenu.addEventListener('click', () => {
+        hamMenu.classList.toggle('active');
+        OffScreenMenu.classList.toggle('active');
+    });
+});

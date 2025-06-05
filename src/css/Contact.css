@@ -290,6 +290,7 @@ footer {
     flex: 1;
     min-width: 250px;
 }
+ HEAD
 
 .footer-section h4 {
     font-weight: bold;
@@ -309,6 +310,75 @@ footer {
 
 .footer-contact a {
     color: black;
+
+.OffScreenMenu{
+  background-color: #333;
+  height: 100vh;
+  width: 100%;
+  max-width: 165px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  transition: right 0.3s ease;
+  z-index:1;
+}
+
+.OffScreenMenu.active{
+  right: 0;
+}
+
+.HambMenu{
+  padding: 1rem;
+  display: flex;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index:2;
+}
+.HambMenu span{
+  height: 5px;
+  width: 100%;
+  background-color:cyan;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s ease;
+}
+.HambMenu span:nth-child(1){
+  top: 25%;
+}
+.HambMenu span:nth-child(3){
+  top: 75%;
+}
+.HambMenu.active span:nth-child(1){
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.HambMenu.active span:nth-child(2){
+  opacity: 0;
+}
+.HambMenu.active span:nth-child(3){
+  top: 50%;
+  transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.Hamburger{
+  height: 50px;
+  width: 50px;
+  margin-left:auto;
+  position: relative;
+}
+.menu a{
+
     text-decoration: none;
 }
 
@@ -355,4 +425,82 @@ div img {
 
 .subscribe-form button:hover {
     background-color: grey;
+}
+ HEAD
+
+  
+  nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: sticky;
+  }
+  
+  
+  
+  div img{
+    margin-right: auto;
+  }
+  
+  .menu {
+    z-index: 1;/*
+    display: grid;*/
+    grid-template-columns: 1fr;
+    background-color: transparent;
+    transition: background-color 0.5s ease-in;
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    height: 75px;
+  }
+  
+  .menu.scrolled{
+    background-color: white;
+    color: black;
+  }
+  
+.menu:hover {
+    background-color: white; 
+    color: white;
+}
+  
+.menu:hover a {
+    color: black;
+    transition: color 0.35s ease-in;
+  
+}
+a:hover {
+    color: orangered !important;
+    text-decoration: underline;
+}
+
+@media (min-width: 992px) {
+  .menu{
+    display: grid;
+  }
+
+  .HambMenu{
+    display: none;
+  }
+}
+
+@media (min-width: 768px){
+  .menu{
+    display: grid;
+  }
+
+  .HambMenu{
+    display: none;
+  }
+}
+
+@media (max-width: 768px){
+  .menu{
+    display: none;
+  }
+
+  .HambMenu{
+    display: flex;
+  }
+}
 }

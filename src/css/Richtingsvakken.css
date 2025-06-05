@@ -9,11 +9,11 @@ body {
     font-family: 'Raleway', sans-serif;
     line-height: 1.6;
     color: #ffffff;
-    max-width: 100%;
-    margin: 0 auto;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     background-color: #000000;
+
 }
 /* Main content */
 main {
@@ -45,7 +45,7 @@ section {
     box-shadow: 0 2px 4px rgba(255,255,255,0.1);
     display: flex;
     gap: 2rem;
-    width: 50%;
+    width: 100%;
 
 }
 
@@ -64,11 +64,6 @@ nav{
   margin-right: 15px;
 }
 
-
-
-div img{
-  margin-right: auto;
-}
 
 img
 {
@@ -296,6 +291,7 @@ section .content{
 html
 {
     scroll-behavior: smooth;
+    
     /*background-image: linear-gradient(to bottom, #000000 1%, #ffffff 7.5%, #000000 19.5%, #ffffff 36.5%, #000000 55%, #ffffff 71.5%, #000000 85%);
 */
     }
@@ -320,7 +316,6 @@ h1
 }
 .content
 {
-    margin-left: 25%;
     margin-bottom: 0;
 }
 .zwartwit
@@ -360,7 +355,7 @@ footer
 }
 .zwart
 {
-  background-color: black;
+  background-color: pink;
   color: white;
 }
 
@@ -466,8 +461,8 @@ main
 
   section.content {
     flex-direction: row;
-    width: 50%;
     margin-left: 25%;
+    max-width: 70%;
   }
 
 
