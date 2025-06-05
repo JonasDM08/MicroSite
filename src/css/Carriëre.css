@@ -111,7 +111,7 @@ div img{
   position: fixed;
   top: 0;
   right: 0;
-  z-index:2;
+  z-index:7;
 }
 .HambMenu span{
   height: 5px;
