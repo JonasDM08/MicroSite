@@ -596,6 +596,13 @@ h1{
         align-items: center;
         padding: 2rem;
     }
+    .menu{
+    display: grid;
+  }
+
+  .HambMenu{
+    display: none;
+  }
 }
 
 
@@ -622,6 +629,13 @@ h1{
     main {
         padding-top: 5%;
     }
+    .menu{
+    display: grid;
+  }
+
+  .HambMenu{
+    display: none;
+  }
 
     
     /* Algemene layoutregels */
@@ -654,33 +668,17 @@ h1{
     }
 }
 
-@media (min-width: 992px) {
-  .menu{
-    display: grid;
-  }
-
-  .HambMenu{
-    display: none;
-  }
-}
-
-@media (min-width: 768px){
-  .menu{
-    display: grid;
-  }
-
-  .HambMenu{
-    display: none;
-  }
-}
-
 @media (max-width: 768px){
-  .menu{
+    .menu{
     display: none;
   }
 
   .HambMenu{
     display: flex;
+  }
+
+  .intro{
+    padding-top:200px;
   }
 }
 /* Afbeeldingen */
