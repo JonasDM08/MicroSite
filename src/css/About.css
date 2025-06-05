@@ -30,23 +30,6 @@ header h1 {
     font-weight: 300;
 }
 
-.Overzicht{
-    background-color: white;
-    max-width: 80%;
-    height: 80vh;
-}
-
-.wit{
-    display: flex;
-    background-color: white;
-    color: black;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
 
 aside, .rechts {
     float: left;
@@ -75,6 +58,14 @@ section:last-of-type {
     border-bottom: none;
 }
 
+.gif{
+  
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 60%;
+    flex-grow: 1;
+}
+
 h2 {
     font-size: 2em;
     font-weight: 400;
@@ -100,14 +91,13 @@ li {
 }
 
 table {
-    display: flex;
     flex-grow: 1;
-    width: 60%;
+    display: flex;
+    width: 80%;
     border-collapse: collapse;
     margin-top: 10px;
-    
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 th, td {
@@ -132,6 +122,7 @@ th {
     background-color: white;
     justify-content: center;
     text-align: center;
+    margin-top: 20px;
 }
 
 .Overzicht h3 {
@@ -181,11 +172,7 @@ a:hover {
 }
 
 
-.gif{
-    padding: 40px 20px;
-    margin: 20px auto;
-    max-width: 60%;
-}
+
 
 
 
@@ -445,7 +432,7 @@ nav{
   }
   
 
-  .TableSection {
+.TableSection {
     background-color: black;
     max-width: 80%;
     height: 80vh;
@@ -453,11 +440,13 @@ nav{
 .TabelSection h2{
   width: 67.5%;
 }
+
 .TabelSectionInhoud{
   width: 100%;
   display: flex;
   flex-flow: column;
   align-items: center;
+  justify-content: center;
 }
 
 .TableSection table {
@@ -465,7 +454,26 @@ nav{
     border-collapse: collapse;
     margin-top: 10px;
     background-color: black;
+    display: flex;
 }
+.Overzicht table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white;
+    display: flex;
+}
+.wit{
+    display: flex;
+    background-color: white;
+    color: black;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
 .zwart {
     display: flex;
     background-color: black;
@@ -476,6 +484,9 @@ nav{
     align-items: center;
     padding: 20px;
 }
+
+
+
 
 .white-to-black-fade {
     background: linear-gradient(to bottom, white 40px, black);
