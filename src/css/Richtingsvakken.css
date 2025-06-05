@@ -13,6 +13,7 @@ body {
     margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
+    background-color: #000000;
 }
 /* Main content */
 main {
@@ -69,6 +70,13 @@ div img{
   margin-right: auto;
 }
 
+img
+{
+  border-radius: 0.8rem !important;
+  height: 400px !important;
+  width: 100% !important;
+}
+
 .menu {
   z-index: 1;
   display: grid;
@@ -110,8 +118,11 @@ a:hover{
     flex: 1;
     max-height: 400px;
     overflow-y: auto;
-    padding-right: 1rem;
+    padding: 1rem;
     border-right: 1px solid #333;
+    max-width: 800px;
+    min-width: 500px;
+    max-height: 400px;
 }
 
 /* Lists */
@@ -126,11 +137,14 @@ li {
 
 /* Images */
 .image-container {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 300px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 400px;
+  padding: 0;
+  max-width: 420px;
+  height: 404px;
 }
 
 .content-image {
@@ -138,6 +152,14 @@ li {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(255,255,255,0.2);
+    margin-right: 0;
+}
+
+.content-image .image-container
+{
+  flex :none;
+  width: 400px;
+  height: 4px;
 }
 
 /* Footer */
@@ -170,6 +192,7 @@ footer {
 }
 
 /* Responsive design */
+/*
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -201,7 +224,7 @@ footer {
     .image-container {
         min-width: auto;
     }
-}
+}*/
   .footer {
     color: white;
     padding: 40px 10%;
@@ -213,14 +236,14 @@ footer {
 }
 .footer-logo {
     width: 90%;
-    height: 70px;
+    height: 80px !important;
     border: 2px solid black;
     border-radius: 10px;
 }
 
 .footer-logo-2 {
-  width: 70px;
-  height: 70px;
+  width: 80px !important;
+  height: 80px !important;
   border: 2px solid black;
   border-radius: 10px;
 }
@@ -283,11 +306,17 @@ html
     margin-left: 25%;
     margin-bottom: 0;
     margin-top: 0;
+    background-color: black;
+    box-shadow: none;
 }
 
 h1
 {
     margin: 0;
+    background-color: black !important;
+    color: white !important;
+    font-size: 2.5em;
+    font-weight: 550;
 }
 .content
 {
@@ -324,19 +353,35 @@ footer
     margin-top: 0;
 }
 
-nav 
-{
-    background-color: black;
-}
-
 .wit
 {
-    background-color: white;
+  background-color: white;
+  color: black;
 }
 .zwart
 {
-    background-color: black;
+  background-color: black;
+  color: white;
 }
+
+.wborder
+{
+    border: 3px solid white;
+    border-radius: 1rem;
+    box-shadow: none;
+    background-color: black;
+    color: white;
+}
+.zborder
+{
+    border: 3px solid black;
+    border-radius: 1rem;
+    box-shadow: none;
+    background-color: white;
+    color: black;
+}
+
+
 .richting
 {
     height: 120px;
@@ -352,7 +397,18 @@ main
     color: black;
     border-color: black;
     box-shadow: none;
+    border: 3px solid black;
+    border-radius: 1rem;
 }
+
+.speciaal
+{
+  color: black;
+  background-color: white;
+  border: none;
+  box-shadow: none;
+}
+
 
 /* Smartphones (portrait & landscape) */
 @media screen and (max-width: 480px) {
@@ -367,19 +423,9 @@ main
 
   section.content {
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .text-content {
-    max-height: none;
-    padding: 0;
-    border: none;
-  }
-
-  .image-container {
-    min-width: 100%;
   }
 
   .footer {
@@ -396,19 +442,9 @@ main
 
   section.content {
     flex-direction: column;
-    width: 85%;
+    width: 45%;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .text-content {
-    max-height: none;
-    padding: 0;
-    border: none;
-  }
-
-  .image-container {
-    min-width: 100%;
   }
 
   nav {
@@ -434,15 +470,7 @@ main
     margin-left: 25%;
   }
 
-  .text-content {
-    max-height: 400px;
-    padding-right: 1rem;
-    border-right: 1px solid #333;
-  }
 
-  .image-container {
-    min-width: 300px;
-  }
 
   nav {
     justify-content: flex-end;

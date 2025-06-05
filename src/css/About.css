@@ -90,7 +90,7 @@ li {
 
 table {
     
-    width: 100%;
+    max-width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
     background-color: white;
@@ -236,7 +236,7 @@ nav{
     width: 100%;
     padding-bottom: 30px;
     margin: none;
-    
+    justify-content: center;
     background: linear-gradient(black 50%, white);
     color: white;
     display: inline-flex;
@@ -245,11 +245,15 @@ nav{
   .WatIsADB p {
     display: block;
     max-width: 700px;
+    border: 1px solid white;
+    max-height: 25%;
+    align-items: center;
+    padding: 0.3rem;
   }
 
   .LeerlingenProfiel{
-     height: 85vh;
-     width: 100%;
+    height: 85vh;
+    width: 100%;
     padding-bottom: 30px;
     margin: none;
     background: linear-gradient(white 80%, black);
@@ -257,11 +261,20 @@ nav{
     display: inline-flex;
   }
 
-  .LeerlingenProfielTekst, .LeerlingenProfielFoto {
+  .LeerlingenProfielTekst {
     height: 80%;
     width: 49%;
     padding: 1rem;
     margin: 1rem;
+    border: 2px solid black;
+    border-radius: 15px;
+  }
+
+  .LeerlingenProfielFoto {
+    height: 80%;
+    width: 49%;
+    margin: 1rem;
+    padding: 0;
     border: 2px solid black;
     border-radius: 15px;
   }
@@ -272,6 +285,7 @@ nav{
     margin: 0;
     padding: 0;
     box-sizing: 0;
+    border-radius: 13px;
   }
 
   .AanbiedingRichting{
@@ -354,10 +368,18 @@ nav{
 
   .TableSection {
     background-color: black;
-    width: 100%;
+    max-width: 80%;
     height: 80vh;
 }
-
+.TabelSection h2{
+  width: 67.5%;
+}
+.TabelSectionInhoud{
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
 .zwart {
     display: flex;
     background-color: black;
@@ -376,9 +398,7 @@ nav{
     z-index: 1;
 }
 
-.ButtonKolom{
-  
-}
+
 
 .LeesMeer{
   display: inline-flex;
@@ -403,46 +423,4 @@ nav{
 
 .LeesMeer .btn-arrow {
   padding-left: 8px;
-}
-
-@media screen and (min-width: 1500px) {
-
-  .AanbiedingRichtingFotos img {
-    width: 500px;
-    height: 400px;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    align-items: center;
-    align-content: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-  
-  }
-
-  .AanbiedingRichtingFoto1 img{
-    border-bottom: 1px solid white;
-    border-right: 1px solid white;
-    border-radius: 10px 0px 0px 0px;
-   
-  }
-
-  .AanbiedingRichtingFoto2 img{
-   border-radius: 0px 10px 0px 0px;
-  }
-
-  .AanbiedingRichtingFoto3 img{
-
-  }
- 
-  .AanbiedingRichtingFoto4 img{
-    border-top: 1px solid white;
-    border-left: 1px solid white;
-    border-radius: 0px 0px 10px 0px;
-
-    
-  }
-
-  
 }

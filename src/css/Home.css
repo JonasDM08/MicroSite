@@ -194,7 +194,8 @@ a:hover {
   margin-bottom: 10px;
 }
 
-.OverOns-item p {
+.OverOns-item p,
+.TekstCarrière  {
   font-size: 16px;
   padding-bottom: 20px;
 }
@@ -273,9 +274,11 @@ a:hover {
 
 /* === Footer === */
 .footer {
-  background: linear-gradient(to bottom, black 30%, white 100%);
+  background-color: rgb(0, 0, 0); 
   color: white;
   padding: 40px 10%;
+  margin-bottom: 0px;
+  /*padding-bottom: 0px;*/
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -319,7 +322,7 @@ a:hover {
   text-decoration: underline;
 }
 
-.footer-bottom {
+/*.footer-bottom {
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
@@ -345,6 +348,13 @@ a:hover {
   .OverOns-grid {
     padding-top: 150px;
     padding-bottom: 50px;
+  }
+
+  .footer-logo {
+  width: 500px;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 10px;
   }
 }
 
@@ -390,5 +400,9 @@ a:hover {
   .lees-meer-btn-OverOns,
   .lees-meer-btn-Carrière {
     font-size: 0.95rem;
+  }
+
+  .OverOns-grid {
+    padding-bottom: 180px;
   }
 }
