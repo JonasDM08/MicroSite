@@ -33,7 +33,6 @@ div img {
 }
 
 .menu {
-  z-index: 1;
   display: grid;
   grid-template-columns: 1fr;
   background-color: transparent;
@@ -43,6 +42,74 @@ div img {
   width: 100%;
   height: 75px;
   z-index: 1;
+}
+
+.OffScreenMenu{
+  background-color: #333;
+  height: 100vh;
+  width: 100%;
+  max-width: 165px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  transition: right 0.3s ease;
+  z-index:1;
+}
+
+.OffScreenMenu.active{
+  right: 0;
+}
+
+.HambMenu{
+  padding: 1rem;
+  display: flex;
+  background-color: transparent;
+  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index:2;
+}
+.HambMenu span{
+  height: 5px;
+  width: 100%;
+  background-color:cyan;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s ease;
+}
+.HambMenu span:nth-child(1){
+  top: 25%;
+}
+.HambMenu span:nth-child(3){
+  top: 75%;
+}
+.HambMenu.active span:nth-child(1){
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.HambMenu.active span:nth-child(2){
+  opacity: 0;
+}
+.HambMenu.active span:nth-child(3){
+  top: 50%;
+  transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.Hamburger{
+  height: 50px;
+  width: 50px;
+  margin-left:auto;
+  position: relative;
 }
 
 .menu.scrolled {
@@ -356,6 +423,34 @@ a:hover {
   border: 2px solid black;
   border-radius: 10px;
   }
+
+  .menu{
+    display: grid;
+  }
+
+  .HambMenu{
+    display: none;
+  }
+}
+/*=== Desktop Schermen ===*/
+@media (min-width: 992px) {
+  .menu{
+    display: grid;
+  }
+
+  .HambMenu{
+    display: none;
+  }
+}
+
+@media (min-width: 768px){
+  .menu{
+    display: grid;
+  }
+
+  .HambMenu{
+    display: none;
+  }
 }
 
 /*  Kleine schermen: Mobiel / Tablet */
@@ -404,5 +499,13 @@ a:hover {
 
   .OverOns-grid {
     padding-bottom: 180px;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  .HambMenu{
+    display: flex;
   }
 }
