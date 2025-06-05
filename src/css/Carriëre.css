@@ -31,7 +31,7 @@ header{
 main{
     padding-top: 5%;
     grid-area: mn;
-    background-color: white;
+    background-color: pink;
 }
 
 
@@ -39,7 +39,7 @@ main{
 
 footer{
     grid-area: ft;
-    background-color: black;
+    background-color: pink;
     color: white;
     padding: 20px;
 }
