@@ -271,45 +271,57 @@ button:hover {
     background-color: #a6a6a6;
 }
 
-/* FOOTER */
-footer {
-    grid-area: ft;
-}
-
+/* === Footer === */
 .footer {
-    background-color: white;
-    color: black;
-    padding: 40px 10%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.footer-section {
-    flex: 1;
-    min-width: 250px;
-}
- HEAD
-
-.footer-section h4 {
-    font-weight: bold;
+  background-color: rgb(0, 0, 0); 
+  color: white;
+  padding: 40px 10%;
+  margin-bottom: 0px;
+  /*padding-bottom: 0px;*/
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .footer-logo {
-    width: 65%;
-    height: 70%;
-    border: 2px solid black;
-    border-radius: 10px;
+  width: 90%;
+  height: 70px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.footer-logo-2 {
+  width: 70px;
+  height: 70px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
 }
 
 .footer-contact {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-contact li {
+  margin: 5px 0;
 }
 
 .footer-contact a {
-    color: black;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+
 
 .OffScreenMenu{
   background-color: #333;
@@ -502,5 +514,4 @@ a:hover {
   .HambMenu{
     display: flex;
   }
-}
 }
