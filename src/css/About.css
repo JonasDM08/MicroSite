@@ -236,7 +236,7 @@ nav{
     width: 100%;
     padding-bottom: 30px;
     margin: none;
-    
+    justify-content: center;
     background: linear-gradient(black 50%, white);
     color: white;
     display: inline-flex;
@@ -245,11 +245,15 @@ nav{
   .WatIsADB p {
     display: block;
     max-width: 700px;
+    border: 1px solid white;
+    max-height: 25%;
+    align-items: center;
+    padding: 0.3rem;
   }
 
   .LeerlingenProfiel{
-     height: 85vh;
-     width: 100%;
+    height: 85vh;
+    width: 100%;
     padding-bottom: 30px;
     margin: none;
     background: linear-gradient(white 80%, black);
@@ -257,11 +261,20 @@ nav{
     display: inline-flex;
   }
 
-  .LeerlingenProfielTekst, .LeerlingenProfielFoto {
+  .LeerlingenProfielTekst {
     height: 80%;
     width: 49%;
     padding: 1rem;
     margin: 1rem;
+    border: 2px solid black;
+    border-radius: 15px;
+  }
+
+  .LeerlingenProfielFoto {
+    height: 80%;
+    width: 49%;
+    margin: 1rem;
+    padding: 0;
     border: 2px solid black;
     border-radius: 15px;
   }
@@ -272,6 +285,7 @@ nav{
     margin: 0;
     padding: 0;
     box-sizing: 0;
+    border-radius: 13px;
   }
 
   .AanbiedingRichting{
@@ -339,7 +353,7 @@ nav{
     height: 80vh;
 }
 .TabelSection h2{
-  width: 65.3%;
+  width: 67.5%;
 }
 .TabelSectionInhoud{
   width: 100%;
