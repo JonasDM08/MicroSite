@@ -82,6 +82,73 @@ div img{
   z-index: 1;
 }
 
+.OffScreenMenu{
+  background-color: #333;
+  height: 100vh;
+  width: 100%;
+  max-width: 165px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  transition: right 0.3s ease;
+  z-index:1;
+}
+
+.OffScreenMenu.active{
+  right: 0;
+}
+
+.HambMenu{
+  padding: 1rem;
+  display: flex;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index:2;
+}
+.HambMenu span{
+  height: 5px;
+  width: 100%;
+  background-color:cyan;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s ease;
+}
+.HambMenu span:nth-child(1){
+  top: 25%;
+}
+.HambMenu span:nth-child(3){
+  top: 75%;
+}
+.HambMenu.active span:nth-child(1){
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.HambMenu.active span:nth-child(2){
+  opacity: 0;
+}
+.HambMenu.active span:nth-child(3){
+  top: 50%;
+  transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.Hamburger{
+  height: 50px;
+  width: 50px;
+  margin-left:auto;
+  position: relative;
+}
+
 .menu.scrolled{
   background-color: white;
   color: black;
@@ -170,6 +237,7 @@ h1{
 .layout {
     display: flex;
     align-items: center;
+    flex-direction: row;
     gap: 2rem;
     padding: 4rem 2rem;
     transition: background-color 1s ease-in-out;
@@ -184,37 +252,42 @@ h1{
 
 /* Afbeeldingen */
 .verderafbeeldingen img {
+    min-width: 530px;
     width: 100%;
     height: 500px;
     border-radius: 1rem;
 }
 
 /* Contentblokken */
+
 .layout > div {
     flex: 1;
 }
 
-/* Specifieke breedteverdeling: 2/3 beeld, 1/3 tekst */
-/* Standaard: foto links, content rechts */
-.layout {
-    flex-flow: row wrap;
+/* Standaard: content links (1/3), afbeelding rechts (2/3) */
+.layout{
+    flex-direction: row;
 }
 .layout .verderafbeeldingen {
+    order: 2;
     flex: 2 1 0;
 }
 .layout [class$='-content'] {
+    order: 1;
     flex: 1 1 0;
 }
 
-/* Wissel om: als .reverse op .layout staat, foto rechts, content links */
+/* Reverse: content rechts (1/3), afbeelding links (2/3) */
 .layout.reverse {
-    flex-direction: row wrap;
+    flex-direction: row;
 }
 .layout.reverse .verderafbeeldingen {
-    flex: 0 1 2;
+    order: 1;
+    flex: 2 1 0;
 }
 .layout.reverse [class$='-content'] {
-    flex: 0 1 1;
+    order: 2;
+    flex: 1 1 0;
 }
 
 
@@ -231,7 +304,7 @@ h1{
 }
 
 
-
+/*
 .layout::before,
 .layout::after {
     content: "";
@@ -252,7 +325,7 @@ h1{
     bottom: -40px;
     background: linear-gradient(to top, transparent, currentColor);
 }
-
+*/
 /* Zorg dat layout relatief is gepositioneerd */
 .layout {
     position: relative;
@@ -355,6 +428,10 @@ h1{
     z-index: 1;
     position: relative;
     height: 500px;
+    max-height: 500px;
+    overflow: hidden;
+    min-height: 500px;
+    min-width: 530px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -381,6 +458,7 @@ h1{
 }
 
  /* INFORMATIE: Footer sectie stijlen */
+    
   .footer {
     background: linear-gradient(to top, black 100%,rgb(255, 255, 255) 30%);
     background-size: 100%;
@@ -388,35 +466,42 @@ h1{
     font-size: 15px;
     padding: 40px 10%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
     text-align: center;
 }
 .footer-logo-1 {
     width: 500px;
+    min-width: 500px;
     height: auto;
     border: 2px solid black;
     border-radius: 10px;
 }
-.footer-logo-2 {
-    width: 90px;
-    height: auto;
-    border: 2px solid black;
-    border-radius: 10px;
-}
-
 .footer-contact-container {
     display: flex;
     flex-direction: column;
     align-items: center;    
     flex: 1;
+    min-width: 532px;
+    width: 532px;
 }
+.footer-logo-2 {
+    width: 90px;
+    min-width: 90px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
 
 
 .footer-section {
     flex: 1;
-    min-width: 250px;
+    min-width: 450px;
+    padding-top: 20px; 
+    padding-bottom: 20px;
 }
 .footer-section h4 {
     font-weight: bold;
@@ -441,15 +526,10 @@ h1{
     text-decoration: none;
     font-size: 20px;
 }
-.footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
-}
-
 
 /* Responsiviteit */
-@media (min-width:481px) and (max-width: 576px){
+
+@media (min-width:481px){
     body {
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
@@ -468,11 +548,14 @@ h1{
         padding-top: 5%;
     }
 
-    footer {
-        padding: 20px;
-    }
+    
 
     .layout {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+      .layout.reverse {
         flex-direction: column;
         align-items: center;
         padding: 2rem;
@@ -492,17 +575,34 @@ h1{
         padding-top: 150px;
         height: 250px;
     }
+
+    .intro {
+        padding-top: 180px;
+        margin-top: -150px;
+    }
+
     main {
         padding-top: 5%;
     }
-    footer {
-        padding: 20px;
-    }
+    
     .layout {
         flex-direction: column;
         align-items: center;
         padding: 2rem;
     }
+
+    .layout.reverse {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+    .menu{
+    display: grid;
+  }
+
+  .HambMenu{
+    display: none;
+  }
 }
 
 
@@ -518,27 +618,43 @@ h1{
 
     header {
         height: 250px;
+        
+    }
+
+    .intro {
+        padding-top: 150px;
+        margin-top: -150px;
     }
 
     main {
         padding-top: 5%;
     }
+    .menu{
+    display: grid;
+  }
 
-    footer {
-        padding: 20px;
-    }
+  .HambMenu{
+    display: none;
+  }
 
-    /* Specifieke breedteverdeling: 2/3 beeld, 1/3 tekst */
-    /* Standaard: foto links, content rechts */
-    .layout {
-        flex-flow: row wrap;
-    }
-    .layout .verderafbeeldingen {
-        flex: 2 1 0;
-    }
-    .layout [class$='-content'] {
-        flex: 1 1 0;
-    }
+    
+    /* Algemene layoutregels */
+.layout {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    transition: background-color 1s ease-in-out;
+}
+
+/* Titel boven, dan beeld en tekst */
+.layout h3 {
+    margin-bottom: 1rem;
+    font-size: 60px;
+    text-align: left;
+}
+
 
     /* Wissel om: als .reverse op .layout staat, foto rechts, content links */
     .layout.reverse {
@@ -551,3 +667,56 @@ h1{
         flex: 0 1 1;
     }
 }
+
+@media (max-width: 768px){
+    .menu{
+    display: none;
+  }
+
+  .HambMenu{
+    display: flex;
+  }
+
+  .intro{
+    padding-top:200px;
+  }
+}
+/* Afbeeldingen */
+.verderafbeeldingen img {
+    width: 100%;
+    height: 500px;
+    border-radius: 1rem;
+}
+
+/* Contentblokken */
+
+.layout > div {
+    flex: 1;
+}
+
+/* Standaard: content links (1/3), afbeelding rechts (2/3) */
+.layout{
+    flex-direction: row;
+}
+.layout .verderafbeeldingen {
+    order: 2;
+    flex: 2 1 0;
+}
+.layout [class$='-content'] {
+    order: 1;
+    flex: 1 1 0;
+}
+
+/* Reverse: content rechts (1/3), afbeelding links (2/3) */
+.layout.reverse {
+    flex-direction: row;
+}
+.layout.reverse .verderafbeeldingen {
+    order: 1;
+    flex: 2 1 0;
+}
+.layout.reverse [class$='-content'] {
+    order: 2;
+    flex: 1 1 0;
+}
+
