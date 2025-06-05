@@ -94,6 +94,72 @@ div img {
   height: 75px;
   z-index: 4;
 }
+.OffScreenMenu{
+  background-color: #333;
+  height: 100vh;
+  width: 100%;
+  max-width: 165px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  transition: right 0.3s ease;
+  z-index:7;
+}
+
+.OffScreenMenu.active{
+  right: 0;
+}
+
+.HambMenu{
+  padding: 1rem;
+  display: flex;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index:7;
+}
+.HambMenu span{
+  height: 5px;
+  width: 100%;
+  background-color:cyan;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s ease;
+}
+.HambMenu span:nth-child(1){
+  top: 25%;
+}
+.HambMenu span:nth-child(3){
+  top: 75%;
+}
+.HambMenu.active span:nth-child(1){
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.HambMenu.active span:nth-child(2){
+  opacity: 0;
+}
+.HambMenu.active span:nth-child(3){
+  top: 50%;
+  transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.Hamburger{
+  height: 50px;
+  width: 50px;
+  margin-left:auto;
+  position: relative;
+}
 
 .menu.scrolled {
   background-color: white;
@@ -396,6 +462,9 @@ h1{
 
 /* 📱 Mobiel (max-width 600px) */
 @media (max-width: 600px) {
+  .banner-text{
+    padding-top: 200px;
+  }
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -408,6 +477,7 @@ h1{
     padding: 10px;
     aspect-ratio: auto;
     height: auto;
+    gap: 20px;
   }
 
   .box img {
@@ -420,6 +490,9 @@ h1{
 
 /* 📱 Mobiel (max-width 600px) */
 @media (max-width: 600px) {
+  .banner-text{
+    padding-top: 200px;
+  }
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -432,6 +505,7 @@ h1{
     padding: 10px;
     aspect-ratio: auto;
     height: auto;
+    gap: 20px;
   }
 
   .box img {
@@ -443,7 +517,11 @@ h1{
 }
 
 /* 📲 Tablet (601px – 1024px) */
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 900px) {
+  .banner-text{
+    padding-top: 200px;
+  }
+
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -456,6 +534,7 @@ h1{
     padding: 12px;
     aspect-ratio: auto;
     height: auto;
+    gap: 20px;
   }
 
   .box img {
@@ -467,6 +546,10 @@ h1{
 
 
 @media (min-width: 100px) and (max-width: 500px) {
+ .banner-text{
+    padding-top: 200px;
+  }
+
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -479,6 +562,7 @@ h1{
     padding: 12px;
     aspect-ratio: auto;
     height: auto;
+    gap: 20px;
   }
 
   .box img {
@@ -489,6 +573,10 @@ h1{
 }
 
 @media (min-width: 50px) and (max-width: 200px) {
+  .banner-text{
+    padding-top: 200px;
+  }
+
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -501,12 +589,43 @@ h1{
     padding: 12px;
     aspect-ratio: auto;
     height: auto;
+    gap: 30px;
   }
 
   .box img {
     border-radius: 12px;
     max-height: 400px;
     object-fit: cover;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu{
+    display: grid;
+  }
+
+  .HambMenu{
+    display: none;
+  }
+}
+
+@media (min-width: 768px){
+  .menu{
+    display: grid;
+  }
+
+  .HambMenu{
+    display: none;
+  }
+}
+
+@media (max-width: 768px){
+  .menu{
+    display: none;
+  }
+
+  .HambMenu{
+    display: flex;
   }
 }
 
