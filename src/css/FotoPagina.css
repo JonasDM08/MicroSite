@@ -437,8 +437,8 @@ a:hover {
 }
 
 .HambMenu span {
-  height: 5px;
-  width: 100%;
+  height: 2px;
+  width: 75%;
   background-color: white;
   border-radius: 25px;
   position: absolute;
