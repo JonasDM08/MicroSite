@@ -144,7 +144,6 @@ th {
 
 img {
     float: right;
-    margin-top: 2rem;
     border-radius: 10px;
 }
 
@@ -240,7 +239,7 @@ nav{
 .HambMenu span{
   height: 5px;
   width: 100%;
-  background-color:cyan;
+  background-color:white;
   border-radius: 25px;
   position: absolute;
   top: 50%;
@@ -311,7 +310,6 @@ nav{
   .WatIsADB p {
     display: block;
     max-width: 700px;
-    border: 1px solid white;
     max-height: 25%;
     align-items: center;
     padding: 0.3rem;
@@ -381,8 +379,7 @@ nav{
 
   .AanbiedingRichtingFotos {
     padding: 0;
-    margin: 0;
-    margin-top: 1rem;
+    margin: 1rem;
     width: 49%;
     height: 80%;
     box-sizing: 0;

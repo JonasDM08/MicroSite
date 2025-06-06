@@ -116,7 +116,7 @@ div img{
 .HambMenu span{
   height: 5px;
   width: 100%;
-  background-color:cyan;
+  background-color:white;
   border-radius: 25px;
   position: absolute;
   top: 50%;
@@ -701,6 +701,26 @@ h1{
   }
 }
 
+@media (min-width: 800px) and (max-width: 820px) {
+    body {
+        background: pink;
+    }
+    main {
+        background: pink;
+    }
+    [class$='-content']:hover {
+        transform: scale(1.05);
+        border: 2px solid pink;
+        box-shadow: 0px 0 50px rgba(255, 0, 217, 0.5);
+    }
+    .black-to-white-fade {
+        background: linear-gradient(to bottom, black 30px, pink);    
+    }
+
+    .white-to-black-fade {
+        background: linear-gradient(to bottom, pink 30px, black);
+    }
+}
 
 @media (min-width: 992px) {
     body {
