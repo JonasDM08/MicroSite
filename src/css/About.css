@@ -30,12 +30,6 @@ header h1 {
     font-weight: 300;
 }
 
-/*.TabelSection,*/ .Overzicht{
-    padding: 40px 20px;
-    margin: 20px auto;
-    max-width: 800px;
-}
-
 
 aside, .rechts {
     float: left;
@@ -64,6 +58,14 @@ section:last-of-type {
     border-bottom: none;
 }
 
+.gif{
+  
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 60%;
+    flex-grow: 1;
+}
+
 h2 {
     font-size: 2em;
     font-weight: 400;
@@ -89,11 +91,13 @@ li {
 }
 
 table {
-    
-    max-width: 100%;
+    flex-grow: 1;
+    display: flex;
+    width: 80%;
     border-collapse: collapse;
     margin-top: 10px;
-    background-color: white;
+    align-items: center;
+    justify-content: center;
 }
 
 th, td {
@@ -118,6 +122,7 @@ th {
     background-color: white;
     justify-content: center;
     text-align: center;
+    margin-top: 20px;
 }
 
 .Overzicht h3 {
@@ -139,7 +144,6 @@ th {
 
 img {
     float: right;
-    margin-top: 2rem;
     border-radius: 10px;
 }
 
@@ -166,15 +170,10 @@ a:hover {
     max-height: 450px;
 }
 
-.gif td {
-    background-color: black;
-}
-
-.gif{
-    width: 800px;
 
 
-}
+
+
 
 .onder{
     padding-top: 550px;
@@ -240,7 +239,7 @@ nav{
 .HambMenu span{
   height: 5px;
   width: 100%;
-  background-color:cyan;
+  background-color:white;
   border-radius: 25px;
   position: absolute;
   top: 50%;
@@ -311,7 +310,6 @@ nav{
   .WatIsADB p {
     display: block;
     max-width: 700px;
-    border: 1px solid white;
     max-height: 25%;
     align-items: center;
     padding: 0.3rem;
@@ -381,8 +379,7 @@ nav{
 
   .AanbiedingRichtingFotos {
     padding: 0;
-    margin: 0;
-    margin-top: 1rem;
+    margin: 1rem;
     width: 49%;
     height: 80%;
     box-sizing: 0;
@@ -432,7 +429,7 @@ nav{
   }
   
 
-  .TableSection {
+.TableSection {
     background-color: black;
     max-width: 80%;
     height: 80vh;
@@ -440,12 +437,40 @@ nav{
 .TabelSection h2{
   width: 67.5%;
 }
+
 .TabelSectionInhoud{
   width: 100%;
   display: flex;
   flex-flow: column;
   align-items: center;
+  justify-content: center;
 }
+
+.TableSection table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: black;
+    display: flex;
+}
+.Overzicht table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white;
+    display: flex;
+}
+.wit{
+    display: flex;
+    background-color: white;
+    color: black;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
 .zwart {
     display: flex;
     background-color: black;
@@ -456,6 +481,9 @@ nav{
     align-items: center;
     padding: 20px;
 }
+
+
+
 
 .white-to-black-fade {
     background: linear-gradient(to bottom, white 40px, black);
