@@ -65,11 +65,11 @@
     <div class="Schaduw1"></div>
 
   <div class="Band1">
-  <div class="box-row">
-    <div class="grid-container">
-      <div class="box"><img src="/src/Afbeeldingen/ADB4.jpg" height="200" width="200" alt="Image 4" onclick="openPopup(3)" /></div>
-      <div class="box"><img src="/src/Afbeeldingen/ADB5.jpg" height="200" width="200" alt="Image 5" onclick="openPopup(4)" /></div>
-      <div class="box"><img src="/src/Afbeeldingen/ADB6_Beter.jpg" height="200" width="200" alt="Image 6" onclick="openPopup(5)" /></div>
+  <div class="box-row1">
+    <div class="grid-container1">
+      <div class="box1"><img src="/src/Afbeeldingen/ADB4.jpg" height="200" width="200" alt="Image 4" onclick="openPopup(3)" /></div>
+      <div class="box1"><img src="/src/Afbeeldingen/ADB5.jpg" height="200" width="200" alt="Image 5" onclick="openPopup(4)" /></div>
+      <div class="box1"><img src="/src/Afbeeldingen/ADB6_Beter.jpg" height="200" width="200" alt="Image 6" onclick="openPopup(5)" /></div>
     </div>
   </div>
   </div>
@@ -89,19 +89,19 @@
 <div class="Schaduw1"></div>
 
   <div class="Band3">
-  <div class="box-row">
-    <div class="grid-container">
-      <div class="box"><img src="/src/VerbeterdeFotos/10de-foto.jpg" height="200" width="200" alt="Image 7" onclick="openPopup(6)" /></div>
-      <div class="box"></div>
-      <div class="box"></div>
+  <div class="box-row1">
+    <div class="grid-container1">
+      <div class="box1"><img src="/src/VerbeterdeFotos/10de-foto.jpg" height="200" width="200" alt="Image 10" onclick="openPopup(9)" /></div>
+      <div class="box1"><img src="/src/Afbeeldingen/ADB8.jpg" height="200" width="200" alt="Image 11" onclick="openPopup(10)"></div>
+      <div class="box1"><img src="/src/Afbeeldingen/ADB6.jpg" height="200" width="200" alt="Image 12" onclick="openPopup(11)"></div>
     </div>
   </div>
   </div>
 
-  <div class="Schaduw2"></div>
+  
   
 
-  <footer>
+   <footer>
     <div class="footer">
         <div class="footer-section">
             <figure>
@@ -144,49 +144,48 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-  const images = Array.from(document.querySelectorAll('.box img'));
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img');
-  const closeBtn = document.querySelector('.close');
-  const prevBtn = document.querySelector('.prev');
-  const nextBtn = document.querySelector('.next');
-  let currentIndex = 0;
+    const images = Array.from(document.querySelectorAll('.box img, .box1 img'));
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.querySelector('.close');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    let currentIndex = 0;
 
-  console.log("Images found:", images.length);
+    lightbox.style.display = 'none';
 
-  lightbox.style.display = 'none';  // Verberg de lightbox in het begin
+    images.forEach((img, i) => {
+      img.style.cursor = "pointer";
+      img.addEventListener('click', () => {
+        currentIndex = i;
+        lightboxImg.src = img.src;
+        lightbox.style.display = 'flex';
+      });
+    });
 
-  images.forEach((img, i) => {
-    img.style.cursor = "pointer";  // laat zien dat het klikbaar is
-    img.addEventListener('click', () => {
-      currentIndex = i;
+    closeBtn.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+    });
+
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
       lightboxImg.src = images[currentIndex].src;
-      lightbox.style.display = 'flex';
+    });
+
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % images.length;
+      lightboxImg.src = images[currentIndex].src;
+    });
+
+    // Close on background click
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = 'none';
+      }
     });
   });
-
-  closeBtn.addEventListener('click', () => {
-    lightbox.style.display = 'none';
-  });
-
-  prevBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    lightboxImg.src = images[currentIndex].src;
-  });
-
-  nextBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % images.length;
-    lightboxImg.src = images[currentIndex].src;
-  });
-
-  // Klik buiten de afbeelding sluit de lightbox
-  lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox) {
-      lightbox.style.display = 'none';
-    }
-  });
-});
 </script>
+
 </body>
 </html>
 

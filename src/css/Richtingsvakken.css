@@ -68,8 +68,8 @@ nav{
 
 img
 {
-  border-radius: 0.8rem !important;
-  height: 400px !important;
+  border-radius: 0.95rem !important;
+  height: 402px !important;
   width: 100% !important;
 }
 
@@ -180,7 +180,7 @@ a:hover{
 .text-content {
     flex: 1;
     max-height: 400px;
-    overflow-y: auto;
+    overflow: auto;
     padding: 1rem;
     border-right: 1px solid #333;
     max-width: 800px;
