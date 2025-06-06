@@ -7,7 +7,7 @@
 
 body{
     flex-grow: 1;
-    background-color: pink;
+    background-color: black;
     font-family: 'Roboto', sans-serif;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -31,7 +31,7 @@ header{
 main{
     padding-top: 5%;
     grid-area: mn;
-    background-color: pink;
+    background-color: white;
 }
 
 
@@ -39,7 +39,7 @@ main{
 
 footer{
     grid-area: ft;
-    background-color: pink;
+    background-color: black;
     color: white;
     padding: 20px;
 }
@@ -213,21 +213,21 @@ h1{
 }
 
 .black-to-white-fade {
-    background: linear-gradient(to bottom, pink 30px, white);
+    background: linear-gradient(to bottom, black 30px, white);
     height: 100px;
     width: 100%;
     z-index: 1;
 }
 
 .white-to-black-fade {
-    background: linear-gradient(to bottom, white 30px, pink);
+    background: linear-gradient(to bottom, white 30px, black);
     height: 100px;
     width: 100%;
     z-index: 1;
 }
 
 .zwart{
-    background-color: pink;
+    background-color: black;
     color: white;
 }
 
@@ -460,7 +460,7 @@ h1{
  /* INFORMATIE: Footer sectie stijlen */
     
   .footer {
-    background: linear-gradient(to top, pink 100%,rgb(255, 255, 255) 30%);
+    background: linear-gradient(to top, black 100%,rgb(255, 255, 255) 30%);
     background-size: 100%;
     color: white;
     font-size: 15px;
