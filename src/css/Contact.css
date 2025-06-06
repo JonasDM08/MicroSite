@@ -356,7 +356,7 @@ button:hover {
 .HambMenu span{
   height: 5px;
   width: 100%;
-  background-color:cyan;
+  background-color:white;
   border-radius: 25px;
   position: absolute;
   top: 50%;
@@ -436,4 +436,34 @@ div img {
 
 .subscribe-form button:hover {
     background-color: grey;
+}
+
+@media (min-width: 992px) {
+  .menu{
+    display: grid;
+  }
+
+  .HambMenu{
+    display: none;
+  }
+}
+
+@media (min-width: 768px){
+  .menu{
+    display: grid;
+  }
+
+  .HambMenu{
+    display: none;
+  }
+}
+
+@media (max-width: 768px){
+  .menu{
+    display: none;
+  }
+
+  .HambMenu{
+    display: flex;
+  }
 }
