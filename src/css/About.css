@@ -310,7 +310,6 @@ nav{
   .WatIsADB p {
     display: block;
     max-width: 700px;
-    border: 1px solid white;
     max-height: 25%;
     align-items: center;
     padding: 0.3rem;
