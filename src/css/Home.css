@@ -300,7 +300,8 @@ a:hover {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  padding-top: 100px;
+  padding-top: 0px;
+  padding-bottom: 100px;
 }
 
 .carrière-item {
@@ -388,11 +389,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/*.footer-bottom {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 14px;
-}
+
 
 /* === Grote schermen === */
 @media (min-width: 1600px) {
