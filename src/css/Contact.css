@@ -115,7 +115,7 @@ main {
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
-    padding: 20px 0;
+    padding-bottom: 200px;
     text-align: center;
 }
 
@@ -273,9 +273,10 @@ button:hover {
 
 /* === Footer === */
 .footer {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20%);
-  padding: 40px 10%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 10%);
+  padding: 60px 10%;
   margin-bottom: 0px;
+  margin-top: -40px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -355,7 +356,7 @@ button:hover {
 .HambMenu span{
   height: 5px;
   width: 100%;
-  background-color:cyan;
+  background-color:white;
   border-radius: 25px;
   position: absolute;
   top: 50%;
@@ -435,4 +436,34 @@ div img {
 
 .subscribe-form button:hover {
     background-color: grey;
+}
+
+@media (min-width: 992px) {
+  .menu{
+    display: grid;
+  }
+
+  .HambMenu{
+    display: none;
+  }
+}
+
+@media (min-width: 768px){
+  .menu{
+    display: grid;
+  }
+
+  .HambMenu{
+    display: none;
+  }
+}
+
+@media (max-width: 768px){
+  .menu{
+    display: none;
+  }
+
+  .HambMenu{
+    display: flex;
+  }
 }
