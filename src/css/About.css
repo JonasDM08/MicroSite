@@ -239,7 +239,7 @@ nav{
 .HambMenu span{
   height: 5px;
   width: 100%;
-  background-color:cyan;
+  background-color:white;
   border-radius: 25px;
   position: absolute;
   top: 50%;
@@ -310,7 +310,6 @@ nav{
   .WatIsADB p {
     display: block;
     max-width: 700px;
-    border: 1px solid white;
     max-height: 25%;
     align-items: center;
     padding: 0.3rem;
@@ -374,7 +373,7 @@ nav{
     max-width: 49%;
     height: 80%;
     font-size: 0.9rem;
-    margin: 1rem;
+    margin-left: 1.2rem;
     padding: 1rem;
   }
 
