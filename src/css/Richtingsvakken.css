@@ -241,7 +241,7 @@ footer {
 }
 
 .text-content::-webkit-scrollbar-track {
-    background: #1a1a1a;
+    background: lightgray;
     border-radius: 4px;
 }
 
@@ -300,14 +300,14 @@ footer {
 .footer-logo {
     width: 90%;
     height: 80px !important;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 10px;
 }
 
 .footer-logo-2 {
   width: 80px !important;
   height: 80px !important;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 10px;
 }
 
@@ -436,7 +436,7 @@ footer
 
 .wborder
 {
-    border: 3px solid white;
+    border: 1px solid white;
     border-radius: 1rem;
     box-shadow: none;
     background-color: black;
@@ -444,7 +444,7 @@ footer
 }
 .zborder
 {
-    border: 3px solid black;
+    border: 1px solid black;
     border-radius: 1rem;
     box-shadow: none;
     background-color: white;
@@ -467,9 +467,8 @@ main
     color: black;
     border-color: black;
     box-shadow: none;
-    border: 3px solid black;
+    border: 1px solid black;
     border-radius: 1rem;
-    margin-right: 2rem;
 }
 
 .rechts
