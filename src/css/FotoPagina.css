@@ -466,6 +466,25 @@ a:hover {
 /* Responsive Design */
 
 @media (max-width: 900px) {
+
+    /* Titels */
+  h1, .banner h1, header h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  /* Paragrafen en andere tekst */
+  p, .banner p, a, li {
+    font-size: 1rem;
+  }
+
+  a {
+    font-size: 1rem;
+  }
+
   .grid-container {
     grid-template-columns: 1fr;
     padding: 0 16px;
@@ -518,5 +537,42 @@ a:hover {
 
   .HambMenu {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Nog kleinere titels */
+  h1, .banner h1, header h1 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  /* Nog kleinere tekst */
+  p, .banner p, a, li {
+    font-size: 0.9rem;
+  }
+
+  .footer-section h4 {
+    font-size: 1rem;
+  }
+
+  .footer-contact li, .footer-contact a {
+    font-size: 0.85rem;
+  }
+
+  .banner-text {
+    padding-top: 80px;
+  }
+
+  .Hamburger {
+    height: 40px;
+    width: 40px;
+  }
+
+  .HambMenu span {
+    width: 60%;
   }
 }
