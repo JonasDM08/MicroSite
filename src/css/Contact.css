@@ -346,6 +346,11 @@ button:hover {
   z-index:1;
 }
 
+.OffScreenMenu li{
+  color: #333;
+}
+
+
 .OffScreenMenu.active{
   right: 0;
 }
