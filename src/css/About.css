@@ -130,7 +130,7 @@ th {
     background-color: white;
 }
 
-.TabelSection th, .TabelSection td,  .TabelSection tr , .TabelSection h2{
+.TabelSection th, .TabelSection td,  .TabelSection tr{
     background-color: black;
     color: white;
     border: 1px solid white;
@@ -602,5 +602,81 @@ nav{
 
   .HambMenu{
     display: flex;
+  }
+}
+
+@media (min-width: 2400px) {
+  body {
+    font-size: 2rem;
+  }
+
+  .AanbiedingRichtingTekst {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 476px) {
+  body {
+    font-size: 0.5rem;
+  }
+
+  .WatIsADB {
+    max-height: 20vh;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  .LeerlingenProfiel {
+    display: block;
+  }
+
+  .LeerlingenProfielTekst, .LeerlingenProfielFoto {
+    min-width: 90vw;
+    max-height: 30vh;
+  }
+
+  .AanbiedingRichting {
+    display: block;
+    min-width: 90vw;
+    min-height: 100vh;
+    max-height: 100vh;
+  }
+
+  .AanbiedingRichtingFotos {
+    display: inline-flex;
+    min-width: 85vw;
+    max-height: 30vh;
+  }
+
+  .AanbiedingRichtingFoto1, .AanbiedingRichtingFoto2, .AanbiedingRichtingFoto3, .AanbiedingRichtingFoto4 {
+    max-width: 15vw;
+    max-height: 15vh;
+    display: flex;
+  }
+
+  .AanbiedingRichtingTekst {
+    min-width: 85vw;
+    max-height: 40vh;
+    font-size: 0.7rem;
+  }
+
+  table {
+    min-width: 99%;
+    max-width: 99%;
+    font-size: 0.7rem;
+  }
+
+  .gif {
+    font-size: 1rem;
+    min-width: 99vw;
+    max-width: 99vw;
+  }
+
+  .MobileVerdwijn {
+    display: none;
+  }
+
+  .gif th, .gif tr, .gif td {
+    max-width: 30vw;
   }
 }
