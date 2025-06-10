@@ -527,6 +527,18 @@ main
     width: 100%;
     height: auto;
   }
+  .midden
+  {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+    .wit
+  {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
 }
 
 /* Tablets (portrait & landscape) */
@@ -549,12 +561,6 @@ main
     margin-right: auto;
     flex-direction: column;
   }
-  .speciaal
-  {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-  }
 
   .image-container {
     width: 100%;
@@ -576,7 +582,7 @@ main
     justify-content: center;
     display: flex;
   }
-  .zwart
+  .midden
   {
     align-items: center;
     justify-content: center;
