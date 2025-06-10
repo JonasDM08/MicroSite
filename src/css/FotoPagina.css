@@ -249,7 +249,7 @@ footer{
     background-color: #000;
     background-size: 100%;
     color: rgb(255, 255, 255);
-    padding: 40px 10%;
+    padding: 150px 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -309,6 +309,16 @@ footer{
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
+}
+
+/* === Grote schermen === */
+@media (min-width: 1600px) {
+  .footer-logo {
+  width: 500px;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  }
 }
 
 /* Lightbox */
@@ -417,6 +427,10 @@ a:hover {
   z-index: 7;
 }
 
+.OffScreenMenu li{
+  color: #333;
+}
+
 .OffScreenMenu.active {
   right: 0;
 }
@@ -466,6 +480,25 @@ a:hover {
 /* Responsive Design */
 
 @media (max-width: 900px) {
+
+    /* Titels */
+  h1, .banner h1, header h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  /* Paragrafen en andere tekst */
+  p, .banner p, a {
+    font-size: 1rem;
+  }
+
+  a {
+    font-size: 1rem;
+  }
+
   .grid-container {
     grid-template-columns: 1fr;
     padding: 0 16px;
@@ -518,5 +551,33 @@ a:hover {
 
   .HambMenu {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Nog kleinere titels */
+  h1, .banner h1, header h1 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  /* Nog kleinere tekst */
+  p, .banner p, a{
+    font-size: 0.9rem;
+  }
+
+  .footer-section h4 {
+    font-size: 1rem;
+  }
+
+  .footer-contact li, .footer-contact a {
+    font-size: 0.85rem;
+  }
+
+  .banner-text {
+    padding-top: 80px;
   }
 }
