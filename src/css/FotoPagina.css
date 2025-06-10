@@ -429,6 +429,7 @@ a:hover {
 
 .OffScreenMenu li{
   color: #333;
+  text-align: center;
 }
 
 .OffScreenMenu.active {
@@ -491,11 +492,7 @@ a:hover {
   }
 
   /* Paragrafen en andere tekst */
-  p, .banner p, a {
-    font-size: 1rem;
-  }
-
-  a {
+  p, .banner p{
     font-size: 1rem;
   }
 
@@ -565,7 +562,7 @@ a:hover {
   }
 
   /* Nog kleinere tekst */
-  p, .banner p, a{
+  p, .banner p{
     font-size: 0.9rem;
   }
 
