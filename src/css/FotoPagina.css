@@ -249,7 +249,7 @@ footer{
     background-color: #000;
     background-size: 100%;
     color: rgb(255, 255, 255);
-    padding: 40px 10%;
+    padding: 150px 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -309,6 +309,16 @@ footer{
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
+}
+
+/* === Grote schermen === */
+@media (min-width: 1600px) {
+  .footer-logo {
+  width: 500px;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  }
 }
 
 /* Lightbox */
@@ -417,6 +427,10 @@ a:hover {
   z-index: 7;
 }
 
+.OffScreenMenu li{
+  color: #333;
+}
+
 .OffScreenMenu.active {
   right: 0;
 }
@@ -477,7 +491,7 @@ a:hover {
   }
 
   /* Paragrafen en andere tekst */
-  p, .banner p, a, li {
+  p, .banner p, a {
     font-size: 1rem;
   }
 
@@ -551,7 +565,7 @@ a:hover {
   }
 
   /* Nog kleinere tekst */
-  p, .banner p, a, li {
+  p, .banner p, a{
     font-size: 0.9rem;
   }
 
@@ -565,14 +579,5 @@ a:hover {
 
   .banner-text {
     padding-top: 80px;
-  }
-
-  .Hamburger {
-    height: 40px;
-    width: 40px;
-  }
-
-  .HambMenu span {
-    width: 60%;
   }
 }
