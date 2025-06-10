@@ -249,7 +249,7 @@ footer{
     background-color: #000;
     background-size: 100%;
     color: rgb(255, 255, 255);
-    padding: 40px 10%;
+    padding: 150px 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -309,6 +309,16 @@ footer{
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
+}
+
+/* === Grote schermen === */
+@media (min-width: 1600px) {
+  .footer-logo {
+  width: 500px;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  }
 }
 
 /* Lightbox */
