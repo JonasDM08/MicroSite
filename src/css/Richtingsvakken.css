@@ -324,6 +324,7 @@ footer {
 
 .footer-section h4 {
     font-weight: bold;
+    margin-bottom: -10px;
 }
 
 .footer-contact {
@@ -544,6 +545,13 @@ main
     justify-content: center;
     display: flex;
   }
+
+  .footer
+  {
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+  }
 }
 
 /* Tablets (portrait & landscape) */
@@ -598,6 +606,13 @@ main
   {
     justify-content: center;
     margin-right: 0;
+  }
+  
+  .footer
+  {
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
   }
 }
 

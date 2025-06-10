@@ -429,6 +429,7 @@ a:hover {
 
 .OffScreenMenu li{
   color: #333;
+  text-align: center;
 }
 
 .OffScreenMenu.active {
