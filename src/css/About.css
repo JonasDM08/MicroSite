@@ -494,16 +494,17 @@ nav{
 
 
 .LeesMeer{
-  display: inline-flex;
+  display:flex;
+  flex-direction: row;
   align-items: center;
   color: #fcfcfc;
   border: 1px solid #fcfcfc;
-  padding: 8px 12px;
+  padding: 0.7rem 0.8rem;
   margin-bottom: 20px;
   font-family: Arial, sans-serif;
   transition: transform 1s;
-  width: 146px;
-  height: 45.5px;
+  width: 10rem;
+  height: 3.2rem;
 }
 .LeesMeer:hover {
   background: white;
@@ -675,15 +676,20 @@ nav{
     font-size: 2rem;
   }
 
-  .AanbiedingRichtingTekst {
+  .AanbiedingRichtingTekst, .LeesMeer, .btn-arrow {
     font-size: 1.9rem;
+  }
+  .LeesMeer{
+    width: 15rem;
+    height: 5rem;
   }
 }
 
 @media (max-width: 476px) {
-  body {
+  body{
     font-size: 0.5rem;
   }
+
 
   .WatIsADB {
     max-height: 20vh;
