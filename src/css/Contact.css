@@ -118,6 +118,9 @@ main {
     padding-bottom: 200px;
     text-align: center;
 }
+.icon{
+  align-items: left;
+}      
 
 .container {
     margin: 120px auto;
@@ -297,7 +300,6 @@ button:hover {
   border: 2px solid black;
   border-radius: 10px;
 }
-
 .footer-logo-2 {
   width: 70px;
   height: 70px;
