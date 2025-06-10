@@ -524,6 +524,7 @@ nav{
 .footer {
   background-color: rgb(0, 0, 0); 
   color: white;
+  font-size: 15px;
   padding: 150px 10%;
   margin-bottom: 0px;
   /*padding-bottom: 0px;*/
@@ -558,7 +559,7 @@ nav{
 }
 
 .footer-contact li {
-  margin: 5px 0;
+  margin: 0px 0;
 }
 
 .footer-contact a {
@@ -568,6 +569,12 @@ nav{
 
 .footer-contact a:hover {
   text-decoration: underline;
+}
+
+.footer h4 {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 /* === Grote schermen === */

@@ -118,6 +118,9 @@ main {
     padding-bottom: 200px;
     text-align: center;
 }
+.icon{
+  align-items: left;
+}      
 
 .container {
     margin: 120px auto;
@@ -280,7 +283,9 @@ button:hover {
 /* === Footer === */
 .footer {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 10%);
+  font-size: 15px;
   padding: 60px 10%;
+  padding-bottom: 60px;
   margin-bottom: 0px;
   margin-top: -40px;
   display: flex;
@@ -295,7 +300,6 @@ button:hover {
   border: 2px solid black;
   border-radius: 10px;
 }
-
 .footer-logo-2 {
   width: 70px;
   height: 70px;
@@ -314,7 +318,7 @@ button:hover {
 }
 
 .footer-contact li {
-  margin: 5px 0;
+  margin: 0px 0;
 }
 
 .footer-contact a {

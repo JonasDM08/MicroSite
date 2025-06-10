@@ -241,13 +241,11 @@ div img {
   height: 100px;
   background: linear-gradient(to bottom, black, white);
 }
-footer{
-  background-color: #000;
-}
 
- .footer {
+.footer {
     background-color: #000;
     background-size: 100%;
+    font-size: 15px;
     color: rgb(255, 255, 255);
     padding: 150px 10%;
     display: flex;
@@ -256,12 +254,14 @@ footer{
     flex-wrap: wrap;
     text-align: center;
 }
+
 .footer-logo-1 {
     width: 90%;
     height: 70px;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 10px;
 }
+
 .footer-logo-2 {
     width: 70px;
     height: 70px;
@@ -303,12 +303,6 @@ footer{
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 20px;
-}
-.footer-bottom {
-    background-color: black;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
 }
 
 /* === Grote schermen === */
@@ -429,6 +423,7 @@ a:hover {
 
 .OffScreenMenu li{
   color: #333;
+  text-align: center;
 }
 
 .OffScreenMenu.active {
@@ -491,11 +486,7 @@ a:hover {
   }
 
   /* Paragrafen en andere tekst */
-  p, .banner p, a {
-    font-size: 1rem;
-  }
-
-  a {
+  p, .banner p{
     font-size: 1rem;
   }
 
@@ -565,7 +556,7 @@ a:hover {
   }
 
   /* Nog kleinere tekst */
-  p, .banner p, a{
+  p, .banner p{
     font-size: 0.9rem;
   }
 
